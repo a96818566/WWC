@@ -1,0 +1,6 @@
+{
+  "name": "Nasharz Films - Alaska Batteries Deck",
+  "description": "Nasharz Launch Deck",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
