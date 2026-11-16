@@ -339,7 +339,7 @@ export const DeckPage: React.FC<DeckPageProps> = ({
                     <Sparkles className="w-4 h-4 text-amber-700 shrink-0 animate-pulse" />
                     <div>
                       <span className="font-extrabold text-amber-950 block">
-                        ⭐ Campaign Film Concepts — Route 1:
+                        ⭐ Campaign Film Concepts: Route 1
                       </span>
                       <span className="text-amber-900 text-[11px]">
                         "Naam Se Nahi, Kaam Se Pehchaan" ft. Javed Sheikh (3 Commercials, 25s each).

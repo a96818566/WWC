@@ -26,8 +26,8 @@ export const initialDeckData: DeckData = {
       category: 'The Ask',
       visualImage: 'https://res.cloudinary.com/zpwicpo5/image/upload/Worldwide_Cables__Powering_Connections_3.png',
       visualImagePosition: 'center center',
-      overlayHeadline: 'Naam Se Nahi, Kaam Se Pehchaan — TVC Creative Brief',
-      summary: "Worldwide Cables' first national TV campaign ft. Javed Sheikh — shifting buyers from 'Which cable do you recommend?' to 'Give me Worldwide Cables' through LSZH safety and pure-copper proof.",
+      overlayHeadline: 'Naam Se Nahi, Kaam Se Pehchaan - TVC Creative Brief',
+      summary: "Worldwide Cables' first national TV campaign ft. Javed Sheikh, shifting buyers from 'Which cable do you recommend?' to 'Give me Worldwide Cables' through LSZH safety and pure-copper proof.",
       fullText: `WORLDWIDE CABLES: TVC CREATIVE BRIEF
 
 Campaign: Naam Se Nahi, Kaam Se Pehchaan
@@ -70,10 +70,10 @@ The insight: cable is a blind purchase. It disappears behind walls and ceilings,
 5. BRAND AMBASSADOR: JAVED SHEIKH (SIGNED)
 Why he works: mass trust across SEC A to D, credibility with an older decision-maker audience, comic range, and a voice that can carry an authoritative line like "main samjhauta nahi karta."
 How we use him: one man, many characters, one punchline.
-• Nishana — Character: Chaudhry Sb, flamboyant retired general and zamindar | Class reached: Rural, landowners, mass
-• Guru Ji — Character: Spiritual master in a palace drawing room | Class reached: Middle-class homeowners
-• Chamkila — Character: Flashy boutique owner with a bill-paper costume for his electrician | Class reached: Traders, urban homeowners, shop owners
-• Client film — Character: Javed Sheikh as himself, a market walk-through | Class reached: All classes, hero film
+• Nishana | Character: Chaudhry Sb, flamboyant retired general and zamindar | Class reached: Rural, landowners, mass
+• Guru Ji | Character: Spiritual master in a palace drawing room | Class reached: Middle-class homeowners
+• Chamkila | Character: Flashy boutique owner with a bill-paper costume for his electrician | Class reached: Traders, urban homeowners, shop owners
+• Client film | Character: Javed Sheikh as himself, a market walk-through | Class reached: All classes, hero film
 Guardrail: he never boasts. He teaches, questions and corrects, which keeps the tone confident without being boastful.
 
 6. TARGET AUDIENCE
@@ -128,11 +128,11 @@ Note: comedy must make the competitor choice look foolish, not the audience. Nev
 11. VISUAL CUES AND FILM ARCHITECTURE
 Visual memory: the cut-open cable (copper strands), the LSZH vs PVC split screen, the Worldwide pack shot with coils.
 25-second architecture (series films):
-• 0 to 5 s — Interruption: Unmistakable opening (rifle, smoking karahi, bill suit)
-• 5 to 12 s — Hook and tension: Cheap choice made visible and funny
-• 12 to 17 s — Lesson: Javed Sheikh: judge by the work, not the name
-• 17 to 22 s — Product proof: Ceiling cutaway, PVC vs LSZH split screen, copper macro
-• 22 to 25 s — Close: Pack shot, VO line, "Pehchaan naam se nahi, kaam se", logo
+• 0 to 5 s (Interruption): Unmistakable opening (rifle, smoking karahi, bill suit)
+• 5 to 12 s (Hook and tension): Cheap choice made visible and funny
+• 12 to 17 s (Lesson): Javed Sheikh: judge by the work, not the name
+• 17 to 22 s (Product proof): Ceiling cutaway, PVC vs LSZH split screen, copper macro
+• 22 to 25 s (Close): Pack shot, VO line, "Pehchaan naam se nahi, kaam se", logo
 Storyboard style: hand-drawn black and white pencil and charcoal, A4 sheets with the Nasharz header and footer, three frames per row set.
 
 12. FILMS IN THE CAMPAIGN
@@ -150,13 +150,13 @@ Storyboard style: hand-drawn black and white pencil and charcoal, A4 sheets with
 • Rural and agri users: "My tubewell must not blow" | Product: Building and flexible wire | Reason to believe: Pure copper conductor
 
 14. REASON-TO-BELIEVE AND CLAIMS REGISTER
-• LSZH: low smoke, zero halogen, flame retardant — Status: Supported by site and standards (IEC 60754, 61034, 60332)
-• 99.99% pure copper — Status: Stated on the site and product pack. Keep a lab certificate on file
-• DHA Lahore and DHA Burki approvals, PEC certificate, TÜV Austria partnership — Status: Stated on the site. Use the exact wording and logos the client approves
-• Solar PV: UV resistant, XLPO 120 degrees C, TÜV certified — Status: Stated on the site
-• "Na aag, na dhuan, na zehrili gas" — Status: Client wording. Keep "Low Smoke Zero Halogen" on screen. Test reports must be ready
-• "Same price as PVC" — Status: Not on the site. Needs written confirmation
-• Lower bills — Status: Not claimed. Joke only
+• LSZH: low smoke, zero halogen, flame retardant | Status: Supported by site and standards (IEC 60754, 61034, 60332)
+• 99.99% pure copper | Status: Stated on the site and product pack. Keep a lab certificate on file
+• DHA Lahore and DHA Burki approvals, PEC certificate, TÜV Austria partnership | Status: Stated on the site. Use the exact wording and logos the client approves
+• Solar PV: UV resistant, XLPO 120 degrees C, TÜV certified | Status: Stated on the site
+• "Na aag, na dhuan, na zehrili gas" | Status: Client wording. Keep "Low Smoke Zero Halogen" on screen. Test reports must be ready
+• "Same price as PVC" | Status: Not on the site. Needs written confirmation
+• Lower bills | Status: Not claimed. Joke only
 
 15. DELIVERABLES
 • Strategic thought and cracked insight
@@ -182,7 +182,7 @@ Also planned, once concepts are locked: market research (Pakistan cable market, 
 7. Is a trade programme (electrician demos, training or rewards) in scope?`,
       keyPoints: [
         'Campaign & Talent: "Naam Se Nahi, Kaam Se Pehchaan" + "Aap ka Hifazti Current" ft. Javed Sheikh (signed by client)',
-        'Product Scope & Advantage: Cables only — 99.99% pure copper & LSZH safety technology at PVC-level pricing (pending written confirmation)',
+        'Product Scope & Advantage: Cables only, with 99.99% pure copper & LSZH safety technology at PVC-level pricing (pending written confirmation)',
         '4-Film Slate: Hero Client Film (Market Walk-Through) + Series Films (1: Nishana, 2: Guru Ji, 3: Chamkila)',
         'Proof & Approvals: IEC 60754 / 61034 / 60332 test reports, DHA Lahore & Burki approvals, PEC, MES, UET, C&W & TÜV Austria'
       ],
@@ -199,25 +199,25 @@ Also planned, once concepts are locked: market research (Pakistan cable market, 
       visualImage: 'https://res.cloudinary.com/zpwicpo5/image/upload/Worldwide_Cables__Smart_Style_Strong_Connections.png',
       visualImagePosition: 'center center',
       overlayHeadline: 'Worldwide Cables: Two Decades of Proof & Solar Cable Opportunity',
-      summary: 'Two decades of cable manufacturing — from tape-recorder leads and battery cables to ethernet, LSZH, and government-approved solar cables — positioned to own solar safety and what’s inside the wire.',
-      fullText: `1. WORLDWIDE CABLES — OVERVIEW & PROOF POINTS
+      summary: 'Two decades of cable manufacturing, from tape-recorder leads and battery cables to ethernet, LSZH, and government-approved solar cables, positioned to own solar safety and what’s inside the wire.',
+      fullText: `1. WORLDWIDE CABLES: OVERVIEW & PROOF POINTS
 Worldwide Cables has been around for two decades. It started with tape-recorder leads, then moved into battery cables as UPS demand grew (per its CEO’s interview). It now also makes ethernet cables and LSZH cables. The strongest proof point I found is that its solar cables were approved for the CM Punjab Free Solar Program and the Lahore Electric Bus Terminal project. That fits your plan to lead with solar. (enggpost)
 
 2. COMPETITOR LANDSCAPE
-• Fast Cables (Lahore, founded 1985) — Probably the most active brand in the category.
+• Fast Cables (Lahore, founded 1985): Probably the most active brand in the category.
 • Its recent campaign “Bina Bataey, Bina Jataey, Sath Nibhaey” is an emotional, purpose-driven approach that sells care and unity rather than product. (propakistani)
 • It has sponsored Islamabad United in the PSL for eight consecutive seasons. (isbunited)
 • It runs a consumer authentication and prize scheme called Fast Tasdeeq. (sproxil)
 • Its positioning is “Real Quality”. (propakistani)
 
-• Pakistan Cables (founded 1953) — This is the heritage brand.
+• Pakistan Cables (founded 1953): This is the heritage brand.
 • It is the oldest listed cable maker on the PSX, with the largest geographic footprint and a two-decade electrician loyalty club. (pakistancables)
 • Its creative has been insight-led. One TVC was praised because it had no celebrity and focused purely on a relatable insight. (dawn)
 • It has also run a counterfeit-awareness campaign, “Is Your Cable Authentic?”, promoting SMS verification, and a direct “Choose Pakistan Cables” comparison campaign. (adsoftheworld)
 
-• Newage Cables (Lahore, 1956) — It positions on scale and certification: the largest manufacturer in Pakistan and the first in its category with ISO 9000. (dev)
+• Newage Cables (Lahore, 1956): It positions on scale and certification: the largest manufacturer in Pakistan and the first in its category with ISO 9000. (dev)
 
-• Smaller and regional players — Coppergat leans on a portfolio of large projects such as CPEC, Kartarpur and the Punjab Assembly. Burq Cables sells on heritage since 1975. (ensun / google)
+• Smaller and regional players: Coppergat leans on a portfolio of large projects such as CPEC, Kartarpur and the Punjab Assembly. Burq Cables sells on heritage since 1975. (ensun / google)
 
 3. MARKET CONTEXT
 • Solar is the growth story. One report estimates 51 GW of solar deployed by March 2026, against 54 GW of module imports. (nukta)
@@ -255,8 +255,8 @@ Worldwide Cables has been around for two decades. It started with tape-recorder 
       category: 'Strategic Pillar',
       visualImage: 'https://res.cloudinary.com/zpwicpo5/image/upload/Regal_Guru_with_Worldwide_Cables_Box.png',
       visualImagePosition: 'center center',
-      overlayHeadline: 'Worldwide Cables: Brand Foundation — Hifazti Current',
-      summary: 'Worldwide Cables puts LSZH safety technology at the PVC price, so current runs as power, never as fear — judge the results first, and the name comes after.',
+      overlayHeadline: 'Worldwide Cables: Brand Foundation - Hifazti Current',
+      summary: 'Worldwide Cables puts LSZH safety technology at the PVC price, so current runs as power, never as fear. Judge the results first, and the name comes after.',
       fullText: `WORLDWIDE CABLES: BRAND FOUNDATION
 
 1. THE CATEGORY PROBLEM
@@ -276,9 +276,9 @@ This is the single thought behind every film. It is both the product promise and
 
 6. THE THREE-LINE MESSAGE HIERARCHY
 The locked hierarchy, in order of priority:
-• Proof: PVC vs LSZH technology, same price — The rational reason to choose us
-• Feeling: No fear, just real power — The emotional payoff
-• Signature: No big name, results first, then the Hifazti Current — The tagline and the sign-off
+• Proof: PVC vs LSZH technology, same price (The rational reason to choose us)
+• Feeling: No fear, just real power (The emotional payoff)
+• Signature: No big name, results first, then the Hifazti Current (The tagline and the sign-off)
 The Urdu lines you wrote carry all three, and they end every film.
 
 7. WHO WE’RE TALKING TO
@@ -314,8 +314,8 @@ TWO CLAIMS TO LOCK BEFORE THIS IS FINAL
 • “Same price as PVC”: It must hold across the product range the ads feature. If it applies to only some products, the films should name them.
 • “No fire, no smoke, no toxic gas”: Confirm the exact wording against the test certificates before it appears in print or voice-over.`,
       keyPoints: [
-        'Brand Truth & Positioning: LSZH safety technology at the PVC price — current runs as power, never as fear',
-        'Brand Idea: حفاظتی کرنٹ (Hifazti Current) — single thought behind every film and the sign-off line',
+        'Brand Truth & Positioning: LSZH safety technology at the PVC price, so current runs as power, never as fear',
+        'Brand Idea: حفاظتی کرنٹ (Hifazti Current), the single thought behind every film and the sign-off line',
         'Three-Line Hierarchy: Proof (PVC vs LSZH, same price) • Feeling (No fear, real power) • Signature (Results first, Hifazti Current)',
         'Phase 1 Measures & Claims: Recall of "Hifazti Current" & LSZH-at-PVC-price; lock price parity scope & test-certificate wording'
       ],
@@ -331,9 +331,9 @@ TWO CLAIMS TO LOCK BEFORE THIS IS FINAL
       category: 'Creative Core',
       visualImage: 'https://res.cloudinary.com/zpwicpo5/image/upload/Colourful_Courtyard_Cable_Advertisement_1.png',
       visualImagePosition: 'center center',
-      overlayHeadline: '“Hifazti Current” (حفاظتی کرنٹ) — No Fear, Just Real Power',
-      summary: '“Hifazti Current” (حفاظتی کرنٹ) — Javed Sheikh plays Pakistan’s loudest, most colourful characters who prove LSZH technology at the PVC price, landing on: Naam se nahi, kaam se pehchaan.',
-      fullText: `1. THE BIG IDEA — “HIFAZTI CURRENT” (حفاظتی کرنٹ)
+      overlayHeadline: '“Hifazti Current” (حفاظتی کرنٹ) - No Fear, Just Real Power',
+      summary: '“Hifazti Current” (حفاظتی کرنٹ): Javed Sheikh plays Pakistan’s loudest, most colourful characters who prove LSZH technology at the PVC price, landing on: Naam se nahi, kaam se pehchaan.',
+      fullText: `1. THE BIG IDEA: “HIFAZTI CURRENT” (حفاظتی کرنٹ)
 • One line: Javed Sheikh plays the loudest, most colourful characters in Pakistan. Each one is stuck in a problem, and each one learns that the answer is not a big name but the wire behind the wall. LSZH technology comes at the PVC price, and the current runs as power, not fear.
 • The irony that drives it: Javed Sheikh’s characters are themselves “big names”: a guru, a chaudhary, a fashion designer. Each of them is dazzled by show and status. The film makes the point that you shouldn’t buy a cable on name, and it makes it through the biggest name on screen. This is your own tagline, “Naam se nahi, kaam se pehchaan,” played for comedy.
 
@@ -385,7 +385,7 @@ More characters can slot into the same template later for the other segments you
 • Same price as PVC: This is the central claim, so the client has to be able to stand behind it. It matches what the CEO said in their interview, that LSZH options would come without an extra price burden for customers. (enggpost)
 • References in your images: The boutique bill shows KE Electricity branding, so use a fictional utility on the real shoot. The shotgun in the chaudhary frame is a comic prop but sits awkwardly with “no fear,” and it may need broadcast clearance.`,
       keyPoints: [
-        'The Big Idea: “Hifazti Current” (حفاظتی کرنٹ) — LSZH technology at the PVC price, running as power, not fear',
+        'The Big Idea: “Hifazti Current” (حفاظتی کرنٹ), LSZH technology at the PVC price, running as power, not fear',
         'Three Strategic Lines: PVC vs LSZH same price (proof) • No fear, just real power (feeling) • Results first, then Hifazti Current (sign-off)',
         'Three Hero Films (20–25s): Film 1 The Guru (palace) • Film 2 The Costume Designer (boutique) • Film 3 The Chaudhary (courtyard)',
         'Pre-Shoot Clearances: Substantiate "نہ آگ" vs test certificates, confirm same price as PVC, replace KE Electricity utility & clear shotgun prop'
@@ -406,47 +406,47 @@ More characters can slot into the same template later for the other segments you
       overlayHeadline: 'Commercial Storyboards.',
       summary: 'Concept 1 & Concept 2 visual storyboards (12 high-resolution frames)',
       lastUpdated: 'Route 1',
-      fullText: `WORLDWIDE CABLES — STORYBOARDS (CONCEPT 1 & CONCEPT 2)
+      fullText: `WORLDWIDE CABLES: STORYBOARDS (CONCEPT 1 & CONCEPT 2)
 
-CONCEPT 1 — STORYBOARD 1 (6 SLIDES)
+CONCEPT 1: STORYBOARD 1 (6 SLIDES)
 • Slide 1 to Slide 6: Complete visual framing sequence for Concept 1.
 
-CONCEPT 2 — STORYBOARD 2 (6 SLIDES)
+CONCEPT 2: STORYBOARD 2 (6 SLIDES)
 • Slide 1 to Slide 6: Complete visual framing sequence for Concept 2.`,
       folders: [
         {
           id: 'concept-1',
           name: 'Concept 1',
-          conceptName: 'Storyboard 1 — Concept 1',
-          product: 'Worldwide Cables — Concept 1',
+          conceptName: 'Storyboard 1 - Concept 1',
+          product: 'Worldwide Cables - Concept 1',
           images: [
             {
-              title: 'Concept 1 — Slide 1',
+              title: 'Concept 1 - Slide 1',
               url: 'https://res.cloudinary.com/zpwicpo5/image/upload/Worldwide_Cables__F1.png',
               objectPosition: 'center center'
             },
             {
-              title: 'Concept 1 — Slide 2',
+              title: 'Concept 1 - Slide 2',
               url: 'https://res.cloudinary.com/zpwicpo5/image/upload/Worldwide_Cables__F2.png',
               objectPosition: 'center center'
             },
             {
-              title: 'Concept 1 — Slide 3',
+              title: 'Concept 1 - Slide 3',
               url: 'https://res.cloudinary.com/zpwicpo5/image/upload/Worldwide_Cables__F3.png',
               objectPosition: 'center center'
             },
             {
-              title: 'Concept 1 — Slide 4',
+              title: 'Concept 1 - Slide 4',
               url: 'https://res.cloudinary.com/zpwicpo5/image/upload/Worldwide_Cables__F4.png',
               objectPosition: 'center center'
             },
             {
-              title: 'Concept 1 — Slide 5',
+              title: 'Concept 1 - Slide 5',
               url: 'https://res.cloudinary.com/zpwicpo5/image/upload/Worldwide_Cables__F5.png',
               objectPosition: 'center center'
             },
             {
-              title: 'Concept 1 — Slide 6',
+              title: 'Concept 1 - Slide 6',
               url: 'https://res.cloudinary.com/zpwicpo5/image/upload/Worldwide_Cables__F6.png',
               objectPosition: 'center center'
             }
@@ -455,36 +455,36 @@ CONCEPT 2 — STORYBOARD 2 (6 SLIDES)
         {
           id: 'concept-2',
           name: 'Concept 2',
-          conceptName: 'Storyboard 2 — Concept 2',
-          product: 'Worldwide Cables — Concept 2',
+          conceptName: 'Storyboard 2 - Concept 2',
+          product: 'Worldwide Cables - Concept 2',
           images: [
             {
-              title: 'Concept 2 — Slide 1',
+              title: 'Concept 2 - Slide 1',
               url: 'https://res.cloudinary.com/zpwicpo5/image/upload/Worldwide_Cables__N1.png',
               objectPosition: 'center center'
             },
             {
-              title: 'Concept 2 — Slide 2',
+              title: 'Concept 2 - Slide 2',
               url: 'https://res.cloudinary.com/zpwicpo5/image/upload/Worldwide_Cables__N1a.png',
               objectPosition: 'center center'
             },
             {
-              title: 'Concept 2 — Slide 3',
+              title: 'Concept 2 - Slide 3',
               url: 'https://res.cloudinary.com/zpwicpo5/image/upload/Worldwide_Cables__N2.png',
               objectPosition: 'center center'
             },
             {
-              title: 'Concept 2 — Slide 4',
+              title: 'Concept 2 - Slide 4',
               url: 'https://res.cloudinary.com/zpwicpo5/image/upload/Worldwide_Cables__N3.png',
               objectPosition: 'center center'
             },
             {
-              title: 'Concept 2 — Slide 5',
+              title: 'Concept 2 - Slide 5',
               url: 'https://res.cloudinary.com/zpwicpo5/image/upload/Worldwide_Cables__N4.png',
               objectPosition: 'center center'
             },
             {
-              title: 'Concept 2 — Slide 6',
+              title: 'Concept 2 - Slide 6',
               url: 'https://res.cloudinary.com/zpwicpo5/image/upload/Worldwide_Cables__N5.png',
               objectPosition: 'center center'
             }
@@ -493,62 +493,62 @@ CONCEPT 2 — STORYBOARD 2 (6 SLIDES)
       ],
       galleryImages: [
         {
-          title: 'Concept 1 — Slide 1',
+          title: 'Concept 1 - Slide 1',
           url: 'https://res.cloudinary.com/zpwicpo5/image/upload/Worldwide_Cables__F1.png',
           objectPosition: 'center center'
         },
         {
-          title: 'Concept 1 — Slide 2',
+          title: 'Concept 1 - Slide 2',
           url: 'https://res.cloudinary.com/zpwicpo5/image/upload/Worldwide_Cables__F2.png',
           objectPosition: 'center center'
         },
         {
-          title: 'Concept 1 — Slide 3',
+          title: 'Concept 1 - Slide 3',
           url: 'https://res.cloudinary.com/zpwicpo5/image/upload/Worldwide_Cables__F3.png',
           objectPosition: 'center center'
         },
         {
-          title: 'Concept 1 — Slide 4',
+          title: 'Concept 1 - Slide 4',
           url: 'https://res.cloudinary.com/zpwicpo5/image/upload/Worldwide_Cables__F4.png',
           objectPosition: 'center center'
         },
         {
-          title: 'Concept 1 — Slide 5',
+          title: 'Concept 1 - Slide 5',
           url: 'https://res.cloudinary.com/zpwicpo5/image/upload/Worldwide_Cables__F5.png',
           objectPosition: 'center center'
         },
         {
-          title: 'Concept 1 — Slide 6',
+          title: 'Concept 1 - Slide 6',
           url: 'https://res.cloudinary.com/zpwicpo5/image/upload/Worldwide_Cables__F6.png',
           objectPosition: 'center center'
         },
         {
-          title: 'Concept 2 — Slide 1',
+          title: 'Concept 2 - Slide 1',
           url: 'https://res.cloudinary.com/zpwicpo5/image/upload/Worldwide_Cables__N1.png',
           objectPosition: 'center center'
         },
         {
-          title: 'Concept 2 — Slide 2',
+          title: 'Concept 2 - Slide 2',
           url: 'https://res.cloudinary.com/zpwicpo5/image/upload/Worldwide_Cables__N1a.png',
           objectPosition: 'center center'
         },
         {
-          title: 'Concept 2 — Slide 3',
+          title: 'Concept 2 - Slide 3',
           url: 'https://res.cloudinary.com/zpwicpo5/image/upload/Worldwide_Cables__N2.png',
           objectPosition: 'center center'
         },
         {
-          title: 'Concept 2 — Slide 4',
+          title: 'Concept 2 - Slide 4',
           url: 'https://res.cloudinary.com/zpwicpo5/image/upload/Worldwide_Cables__N3.png',
           objectPosition: 'center center'
         },
         {
-          title: 'Concept 2 — Slide 5',
+          title: 'Concept 2 - Slide 5',
           url: 'https://res.cloudinary.com/zpwicpo5/image/upload/Worldwide_Cables__N4.png',
           objectPosition: 'center center'
         },
         {
-          title: 'Concept 2 — Slide 6',
+          title: 'Concept 2 - Slide 6',
           url: 'https://res.cloudinary.com/zpwicpo5/image/upload/Worldwide_Cables__N5.png',
           objectPosition: 'center center'
         }
@@ -579,7 +579,7 @@ CONCEPT 2 — STORYBOARD 2 (6 SLIDES)
       category: 'Color Grade & Tone Reference',
       url: 'https://res.cloudinary.com/zpwicpo5/video/upload/vidssave.com_Har_Koi_Peera_Lahori_Zeera_2.0_1080P.mp4',
       downloadUrl: 'https://res.cloudinary.com/zpwicpo5/video/upload/vidssave.com_Har_Koi_Peera_Lahori_Zeera_2.0_1080P.mp4',
-      description: 'High-definition vibrant commercial grade, crisp Punjabi outdoor lighting, rich saturation and comedic rhythm — Lahori Zeera 2.0.',
+      description: 'High-definition vibrant commercial grade, crisp Punjabi outdoor lighting, rich saturation and comedic rhythm (Lahori Zeera 2.0).',
       duration: '0:45',
       fileSize: '8.4 MB',
       uploadedAt: '2026-08-27'

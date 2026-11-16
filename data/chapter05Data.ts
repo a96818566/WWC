@@ -247,28 +247,28 @@ export const chapter05Data: Chapter = {
       name: 'Route 1 (All 3 Concepts)',
       badge: '⭐ 3 Commercials • 25s Each',
       isFinal: true,
-      summary: 'Campaign Film Concepts: Route 1 — Naam Se Nahi, Kaam Se Pehchaan, ft. Javed Sheikh (3 Commercials, 25 sec each)',
+      summary: 'Campaign Film Concepts: Route 1 - Naam Se Nahi, Kaam Se Pehchaan, ft. Javed Sheikh (3 Commercials, 25 sec each)',
       content: ROUTE_1_MASTER_RAW
     },
     {
       id: 'nishana',
       name: 'Concept 1: “Nishana”',
       badge: 'Building Wire / LSZH',
-      summary: 'Concept 1: Building Wire “Nishana” — “Chaudhry Sb ka Nishana” (Haveli Courtyard ft. Chaudhry Sb & the Double-Barrel Rifle)',
+      summary: 'Concept 1: Building Wire “Nishana” (“Chaudhry Sb ka Nishana” | Haveli Courtyard ft. Chaudhry Sb & the Double-Barrel Rifle)',
       content: `CAMPAIGN FILM CONCEPTS\nWORLDWIDE CABLES: TVC ROUTE 1\n\n${CONCEPT_1_NISHANA_RAW}`
     },
     {
       id: 'guru-ji',
       name: 'Concept 2: “Guru Ji”',
       badge: 'LSZH Building Wire',
-      summary: 'Concept 2: LSZH Building Wire “Guru Ji” — “Short Circuit ka Dera” (Palace Drawing Room ft. Smoking Karahi & Oxygen-Mask Chelas)',
+      summary: 'Concept 2: LSZH Building Wire “Guru Ji” (“Short Circuit ka Dera” | Palace Drawing Room ft. Smoking Karahi & Oxygen-Mask Chelas)',
       content: `CAMPAIGN FILM CONCEPTS\nWORLDWIDE CABLES: TVC ROUTE 1\n\n${CONCEPT_2_GURU_JI_RAW}`
     },
     {
       id: 'chamkila',
       name: 'Concept 3: “Chamkila”',
       badge: 'LSZH + Pure Copper',
-      summary: 'Concept 3: LSZH + Pure Copper “Chamkila” — “Bill-Couture” (Neon Boutique ft. the Bill-Couture Costume)',
+      summary: 'Concept 3: LSZH + Pure Copper “Chamkila” (“Bill-Couture” | Neon Boutique ft. the Bill-Couture Costume)',
       content: `CAMPAIGN FILM CONCEPTS\nWORLDWIDE CABLES: TVC ROUTE 1\n\n${CONCEPT_3_CHAMKILA_RAW}`
     }
   ],

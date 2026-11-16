@@ -28,7 +28,7 @@ export function urduToRomanUrdu(text: string): string {
   // 1. Phrase / Line level mapping (exact contextual matches in scripts, taglines, and narratives)
   const PHRASE_MAP: [RegExp, string][] = [
     // Headings & Brand
-    [/Corporate Social Message\s*[—–-]\s*[“"']?ہر قدم[”"']?/gi, 'Corporate Social Message — "Har Qadam"'],
+    [/Corporate Social Message\s*[—–-]\s*[“"']?ہر قدم[”"']?/gi, 'Corporate Social Message - "Har Qadam"'],
     [/“ہر قدم”/g, '"Har Qadam"'],
     [/”ہر قدم“/g, '"Har Qadam"'],
     [/ہر قدم/g, 'Har Qadam'],
@@ -495,10 +495,10 @@ function parseTextToBlocks(rawText: string): HTMLElement[] {
       }
     }
 
-    // Em-dash territory / concept lines (e.g. "Badhte Raho — progress / growth")
-    const isEmDashItem = /^([A-Za-z0-9\s\(\)\'\’]+)\s+[—–]\s+(.*)$/.test(trimmed);
+    // Dash territory / concept lines (e.g. "Badhte Raho - progress / growth")
+    const isEmDashItem = /^([A-Za-z0-9\s\(\)\'\’]+)\s+[—–-]\s+(.*)$/.test(trimmed);
     if (isEmDashItem) {
-      const emMatch = trimmed.match(/^([A-Za-z0-9\s\(\)\'\’]+)\s+[—–]\s+(.*)$/);
+      const emMatch = trimmed.match(/^([A-Za-z0-9\s\(\)\'\’]+)\s+[—–-]\s+(.*)$/);
       if (emMatch) {
         const item = document.createElement('div');
         item.style.fontSize = '13px';
@@ -507,7 +507,7 @@ function parseTextToBlocks(rawText: string): HTMLElement[] {
         item.style.paddingLeft = '16px';
         item.style.marginBottom = '5px';
         item.style.position = 'relative';
-        item.innerHTML = `<span style="position: absolute; left: 0; color: #c69a53; font-weight: bold;">▪</span> <strong style="color: #0f172a; font-weight: 700;">${emMatch[1]}</strong> <span style="color: #64748b;">—</span> <span>${emMatch[2]}</span>`;
+        item.innerHTML = `<span style="position: absolute; left: 0; color: #c69a53; font-weight: bold;">▪</span> <strong style="color: #0f172a; font-weight: 700;">${emMatch[1]}</strong> <span style="color: #64748b;">-</span> <span>${emMatch[2]}</span>`;
         blocks.push(item);
         continue;
       }
@@ -625,7 +625,7 @@ export async function generateChapterPDF(
             WORLDWIDE CABLES / LAUNCH DECK • CHAPTER ${chapter.number}
           </div>
           <h1 style="font-size: 24px; font-weight: 800; color: #09090b; margin: 0 0 6px 0; line-height: 1.15; letter-spacing: -0.02em;">
-            ${romanTitle} <span style="font-size: 16px; font-weight: 500; color: #64748b;">— ${chapter.category}</span>
+            ${romanTitle} <span style="font-size: 16px; font-weight: 500; color: #64748b;">| ${chapter.category}</span>
           </h1>
           <div style="display: flex; justify-content: space-between; align-items: center; font-size: 10px; color: #64748b; padding: 4px 0; margin-top: 2px;">
             <span>Prepared By: <strong style="color: #0f172a;">Aatif Rasheed</strong> <span style="color: #b8860b; font-weight: 600;">(Producer / Director)</span></span>
@@ -871,7 +871,7 @@ export async function generateChapterPDF(
 
         <div style="position: absolute; bottom: 32px; left: 48px; right: 48px; display: flex; justify-content: space-between; align-items: center; font-size: 10px; color: #64748b; border-top: 1px solid #e2e8f0; padding-top: 10px; text-transform: uppercase; letter-spacing: 0.08em;">
           <span>Worldwide Cables 2026 Campaign</span>
-          <span>${section.label} — Slides 01 to ${String(section.images.length).padStart(2, '0')}</span>
+          <span>${section.label} | Slides 01 to ${String(section.images.length).padStart(2, '0')}</span>
         </div>
       `;
       sandbox.appendChild(dividerPageEl);
@@ -2838,9 +2838,9 @@ export async function generateEstimatePDF(
       <td style="padding: 5px 6px; font-weight: 500; color: #1e293b;">
         ${urduToRomanUrdu(item.description)}
       </td>
-      <td style="padding: 5px 6px; text-align: center; color: #64748b; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, monospace;">${item.rate || '—'}</td>
+      <td style="padding: 5px 6px; text-align: center; color: #64748b; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, monospace;">${item.rate || '-'}</td>
       <td style="padding: 5px 6px; text-align: center; color: #64748b; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, monospace;">${item.units !== undefined ? item.units : 1}</td>
-      <td style="padding: 5px 6px; text-align: center; color: #64748b; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, monospace;">${item.days !== undefined ? item.days : '—'}</td>
+      <td style="padding: 5px 6px; text-align: center; color: #64748b; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, monospace;">${item.days !== undefined ? item.days : '-'}</td>
       <td style="padding: 5px 6px; text-align: right; font-weight: 600; color: #0f172a; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, monospace;">
         ${item.isAtActual ? 'At Actual' : `PKR ${(item.amount || 0).toLocaleString()}`}
       </td>
@@ -2915,7 +2915,7 @@ export async function generateEstimatePDF(
 
               <div style="color: #64748b; font-weight: 600; text-transform: uppercase; font-size: 8px; margin-bottom: 1px;">PREPARED FOR</div>
               <div style="font-weight: 700; color: #000000; font-size: 9px; line-height: 1.35; margin-bottom: 2px;">${clientAddr}</div>
-              <div style="color: #0f172a; font-weight: 700; font-size: 9px; margin-top: 2px;">CLIENT NTN: <span style="font-family: ui-monospace, SFMono-Regular, monospace; font-weight: 800; color: #000000;">${clientNTN || '—'}</span></div>
+              <div style="color: #0f172a; font-weight: 700; font-size: 9px; margin-top: 2px;">CLIENT NTN: <span style="font-family: ui-monospace, SFMono-Regular, monospace; font-weight: 800; color: #000000;">${clientNTN || '-'}</span></div>
             </div>
 
             <div style="text-align: right;">
@@ -2933,7 +2933,7 @@ export async function generateEstimatePDF(
       : `
         <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #e2e8f0; padding-bottom: 6px; margin-bottom: 10px; font-size: 8px; color: #64748b;">
           <span>${dateStr} • ${estimateNo}</span>
-          <span style="font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: #0f172a;">ESTIMATE — Worldwide Cables Campaign</span>
+          <span style="font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: #0f172a;">ESTIMATE - Worldwide Cables Campaign</span>
         </div>
       `;
 
@@ -3015,7 +3015,7 @@ export async function generateEstimatePDF(
       </div>
 
       <div style="display: flex; justify-content: space-between; font-size: 11.5px; font-weight: 800; color: #000000; border-top: 1.5px solid #000000; padding-top: 8px; margin-bottom: 4px;">
-        <span>GRAND TOTAL (PKR) — ${whtRate === 0 && srbRate === 0 ? 'EXCL. TAXES' : 'INCL. APPLIED TAXES'}</span>
+        <span>GRAND TOTAL (PKR) - ${whtRate === 0 && srbRate === 0 ? 'EXCL. TAXES' : 'INCL. APPLIED TAXES'}</span>
         <span style="font-family: ui-monospace, SFMono-Regular, monospace;">PKR ${grandTotal.toLocaleString()}</span>
       </div>
 

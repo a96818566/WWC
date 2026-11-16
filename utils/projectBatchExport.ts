@@ -25,7 +25,7 @@ export const ALL_EXPORTABLE_ITEMS: ExportItemConfig[] = [
     category: 'The Ask & Strategic Scope',
     folder: 'Chapter_01_Campaign_Overview',
     filename: 'Nasharz_WWC_Chapter01_Campaign_Overview.pdf',
-    description: 'Naam Se Nahi, Kaam Se Pehchaan ft. Javed Sheikh — assumptions, positioning, Ultravolt benchmark, segmentation, claims register & open questions.',
+    description: 'Naam Se Nahi, Kaam Se Pehchaan ft. Javed Sheikh: positioning, Ultravolt benchmark, segmentation, claims register & open questions.',
     pageCountEst: '10 Pages'
   },
   {
@@ -47,7 +47,7 @@ export const ALL_EXPORTABLE_ITEMS: ExportItemConfig[] = [
     category: '3 Hero TVCs ft. Javed Sheikh',
     folder: 'Chapter_03_Master_Scripts',
     filename: 'Nasharz_WWC_Chapter03_Master_Scripts.pdf',
-    description: 'Campaign Film Concepts Route 1: Nishana (Chaudhry Sb), Guru Ji (LSZH), and Chamkila (Bill-Couture) — 3 commercials, 25 sec each.',
+    description: 'Campaign Film Concepts Route 1: Nishana (Chaudhry Sb), Guru Ji (LSZH), and Chamkila (Bill-Couture), 3 commercials, 25 sec each.',
     pageCountEst: '9 Pages'
   },
   {

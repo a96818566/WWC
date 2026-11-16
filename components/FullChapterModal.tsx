@@ -379,9 +379,9 @@ export const FullChapterModal: React.FC<FullChapterModalProps> = ({
     const exportChapter: Chapter = {
       ...chapter,
       title: isConceptTabActive
-        ? `${chapter.title} — ${activeConceptTab.name}`
+        ? `${chapter.title} - ${activeConceptTab.name}`
         : currentFolder
-        ? `${chapter.title} — ${currentFolder.name}`
+        ? `${chapter.title} - ${currentFolder.name}`
         : chapter.title,
       fullText: isConceptTabActive ? activeConceptTab.content : (chapter.fullText || ''),
       pdfFullText: isConceptTabActive ? undefined : chapter.pdfFullText,
@@ -406,7 +406,7 @@ export const FullChapterModal: React.FC<FullChapterModalProps> = ({
                 Chapter {chapter.number}
               </span>
               <h3 className="text-base font-bold text-zinc-900 leading-tight">
-                {chapter.title} — <span className="text-zinc-500 font-medium">{chapter.category}</span>
+                {chapter.title} <span className="text-zinc-500 font-medium">| {chapter.category}</span>
               </h3>
             </div>
           </div>
@@ -925,7 +925,7 @@ export const FullChapterModal: React.FC<FullChapterModalProps> = ({
                         Brand Background & Proof Points
                       </span>
                       <h5 className="text-lg font-bold text-white font-heading">
-                        Worldwide Cables — Two Decades & Solar Approvals
+                        Worldwide Cables: Two Decades & Solar Approvals
                       </h5>
                     </div>
                     <span className="text-xs text-zinc-300 bg-zinc-800 px-3 py-1 rounded-full border border-zinc-700">

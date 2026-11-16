@@ -120,9 +120,9 @@ export const EstimateModal: React.FC<EstimateModalProps> = ({
       id: `custom-${Date.now()}`,
       category: targetCat,
       description: 'Custom Production Line Item',
-      rate: '—',
+      rate: '-',
       units: 1,
-      days: days > 1 ? days : '—',
+      days: days > 1 ? days : '-',
       amount: 50000,
       quantity: 1,
       unit: 'Item',
@@ -824,7 +824,7 @@ export const EstimateModal: React.FC<EstimateModalProps> = ({
                               <td className="py-2 px-3 text-center">
                                 <input
                                   type="text"
-                                  value={item.rate || '—'}
+                                  value={item.rate || '-'}
                                   onChange={(e) => updateItemField(item.id, 'rate', e.target.value)}
                                   className="w-full text-center bg-transparent border-0 border-b border-transparent hover:border-zinc-200 focus:border-zinc-400 focus:bg-white px-1 py-0.5 text-zinc-600 focus:outline-none text-xs font-mono"
                                 />
@@ -844,7 +844,7 @@ export const EstimateModal: React.FC<EstimateModalProps> = ({
                               <td className="py-2 px-3 text-center">
                                 <input
                                   type="text"
-                                  value={item.days !== undefined ? item.days : '—'}
+                                  value={item.days !== undefined ? item.days : '-'}
                                   onChange={(e) => updateItemField(item.id, 'days', e.target.value)}
                                   className="w-full text-center bg-transparent border-0 border-b border-transparent hover:border-zinc-200 focus:border-zinc-400 focus:bg-white px-1 py-0.5 text-zinc-600 focus:outline-none text-xs font-mono"
                                 />
@@ -904,7 +904,7 @@ export const EstimateModal: React.FC<EstimateModalProps> = ({
                   </div>
 
                   <div className="flex justify-between items-center text-sm font-bold text-zinc-900 pt-3 border-t border-zinc-300">
-                    <span className="uppercase tracking-tight">Grand Total (PKR) — {taxesAreOff ? 'Excl. Taxes' : 'Incl. Taxes'}</span>
+                    <span className="uppercase tracking-tight">Grand Total (PKR) - {taxesAreOff ? 'Excl. Taxes' : 'Incl. Taxes'}</span>
                     <span className="font-mono text-base font-bold">PKR {grandTotal.toLocaleString()}</span>
                   </div>
 

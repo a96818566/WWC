@@ -10,7 +10,7 @@ export const chapter07Data: Chapter = {
   overlayHeadline: "Client's Concept Storyboards.",
   summary: "Client's Concept & Client's Concept Modified storyboards (13 high-resolution frames)",
   lastUpdated: 'Route 1',
-  fullText: `WORLDWIDE CABLES — CLIENT'S CONCEPT STORYBOARDS
+  fullText: `WORLDWIDE CABLES - CLIENT'S CONCEPT STORYBOARDS
 
 CLIENT STORYBOARD - 1: CLIENT'S CONCEPT (6 SLIDES)
 • Slide 1 to Slide 6: Original client storyboard visual framing sequence.
@@ -22,35 +22,35 @@ CLIENT STORYBOARD - 2: CLIENT'S CONCEPT MODIFIED (7 SLIDES)
       id: 'clients-concept',
       name: "Client's Concept",
       conceptName: 'Client Storyboard - 1',
-      product: "Worldwide Cables — Client's Concept",
+      product: "Worldwide Cables - Client's Concept",
       images: [
         {
-          title: "Client's Concept — Slide 1",
+          title: "Client's Concept - Slide 1",
           url: 'https://res.cloudinary.com/zpwicpo5/image/upload/Title.png',
           objectPosition: 'center center'
         },
         {
-          title: "Client's Concept — Slide 2",
+          title: "Client's Concept - Slide 2",
           url: 'https://res.cloudinary.com/zpwicpo5/image/upload/Worldwide_Cables_2.png',
           objectPosition: 'center center'
         },
         {
-          title: "Client's Concept — Slide 3",
+          title: "Client's Concept - Slide 3",
           url: 'https://res.cloudinary.com/zpwicpo5/image/upload/Worldwide_Cables_3.png',
           objectPosition: 'center center'
         },
         {
-          title: "Client's Concept — Slide 4",
+          title: "Client's Concept - Slide 4",
           url: 'https://res.cloudinary.com/zpwicpo5/image/upload/Worldwide_Cables_4.png',
           objectPosition: 'center center'
         },
         {
-          title: "Client's Concept — Slide 5",
+          title: "Client's Concept - Slide 5",
           url: 'https://res.cloudinary.com/zpwicpo5/image/upload/Worldwide_Cables_5.png',
           objectPosition: 'center center'
         },
         {
-          title: "Client's Concept — Slide 6",
+          title: "Client's Concept - Slide 6",
           url: 'https://res.cloudinary.com/zpwicpo5/image/upload/Worldwide_Cables_6.png',
           objectPosition: 'center center'
         }
@@ -60,40 +60,40 @@ CLIENT STORYBOARD - 2: CLIENT'S CONCEPT MODIFIED (7 SLIDES)
       id: 'clients-concept-modified',
       name: "Client's Concept Modified",
       conceptName: 'Client Storyboard - 2',
-      product: "Worldwide Cables — Client's Concept Modified",
+      product: "Worldwide Cables - Client's Concept Modified",
       images: [
         {
-          title: "Client's Concept Modified — Slide 1",
+          title: "Client's Concept Modified - Slide 1",
           url: 'https://res.cloudinary.com/zpwicpo5/image/upload/Worldwide_Cables_1.png',
           objectPosition: 'center center'
         },
         {
-          title: "Client's Concept Modified — Slide 2",
+          title: "Client's Concept Modified - Slide 2",
           url: 'https://res.cloudinary.com/zpwicpo5/image/upload/Worldwide_Cables__A2.png',
           objectPosition: 'center center'
         },
         {
-          title: "Client's Concept Modified — Slide 3",
+          title: "Client's Concept Modified - Slide 3",
           url: 'https://res.cloudinary.com/zpwicpo5/image/upload/Worldwide_Cables__A3.png',
           objectPosition: 'center center'
         },
         {
-          title: "Client's Concept Modified — Slide 4",
+          title: "Client's Concept Modified - Slide 4",
           url: 'https://res.cloudinary.com/zpwicpo5/image/upload/Worldwide_Cables__A4.png',
           objectPosition: 'center center'
         },
         {
-          title: "Client's Concept Modified — Slide 5",
+          title: "Client's Concept Modified - Slide 5",
           url: 'https://res.cloudinary.com/zpwicpo5/image/upload/Worldwide_Cables__A5.png',
           objectPosition: 'center center'
         },
         {
-          title: "Client's Concept Modified — Slide 6",
+          title: "Client's Concept Modified - Slide 6",
           url: 'https://res.cloudinary.com/zpwicpo5/image/upload/Worldwide_Cables__A6.png',
           objectPosition: 'center center'
         },
         {
-          title: "Client's Concept Modified — Slide 7",
+          title: "Client's Concept Modified - Slide 7",
           url: 'https://res.cloudinary.com/zpwicpo5/image/upload/Worldwide_Cables__A7.png',
           objectPosition: 'center center'
         }
@@ -102,67 +102,67 @@ CLIENT STORYBOARD - 2: CLIENT'S CONCEPT MODIFIED (7 SLIDES)
   ],
   galleryImages: [
     {
-      title: "Client's Concept — Slide 1",
+      title: "Client's Concept - Slide 1",
       url: 'https://res.cloudinary.com/zpwicpo5/image/upload/Title.png',
       objectPosition: 'center center'
     },
     {
-      title: "Client's Concept — Slide 2",
+      title: "Client's Concept - Slide 2",
       url: 'https://res.cloudinary.com/zpwicpo5/image/upload/Worldwide_Cables_2.png',
       objectPosition: 'center center'
     },
     {
-      title: "Client's Concept — Slide 3",
+      title: "Client's Concept - Slide 3",
       url: 'https://res.cloudinary.com/zpwicpo5/image/upload/Worldwide_Cables_3.png',
       objectPosition: 'center center'
     },
     {
-      title: "Client's Concept — Slide 4",
+      title: "Client's Concept - Slide 4",
       url: 'https://res.cloudinary.com/zpwicpo5/image/upload/Worldwide_Cables_4.png',
       objectPosition: 'center center'
     },
     {
-      title: "Client's Concept — Slide 5",
+      title: "Client's Concept - Slide 5",
       url: 'https://res.cloudinary.com/zpwicpo5/image/upload/Worldwide_Cables_5.png',
       objectPosition: 'center center'
     },
     {
-      title: "Client's Concept — Slide 6",
+      title: "Client's Concept - Slide 6",
       url: 'https://res.cloudinary.com/zpwicpo5/image/upload/Worldwide_Cables_6.png',
       objectPosition: 'center center'
     },
     {
-      title: "Client's Concept Modified — Slide 1",
+      title: "Client's Concept Modified - Slide 1",
       url: 'https://res.cloudinary.com/zpwicpo5/image/upload/Worldwide_Cables_1.png',
       objectPosition: 'center center'
     },
     {
-      title: "Client's Concept Modified — Slide 2",
+      title: "Client's Concept Modified - Slide 2",
       url: 'https://res.cloudinary.com/zpwicpo5/image/upload/Worldwide_Cables__A2.png',
       objectPosition: 'center center'
     },
     {
-      title: "Client's Concept Modified — Slide 3",
+      title: "Client's Concept Modified - Slide 3",
       url: 'https://res.cloudinary.com/zpwicpo5/image/upload/Worldwide_Cables__A3.png',
       objectPosition: 'center center'
     },
     {
-      title: "Client's Concept Modified — Slide 4",
+      title: "Client's Concept Modified - Slide 4",
       url: 'https://res.cloudinary.com/zpwicpo5/image/upload/Worldwide_Cables__A4.png',
       objectPosition: 'center center'
     },
     {
-      title: "Client's Concept Modified — Slide 5",
+      title: "Client's Concept Modified - Slide 5",
       url: 'https://res.cloudinary.com/zpwicpo5/image/upload/Worldwide_Cables__A5.png',
       objectPosition: 'center center'
     },
     {
-      title: "Client's Concept Modified — Slide 6",
+      title: "Client's Concept Modified - Slide 6",
       url: 'https://res.cloudinary.com/zpwicpo5/image/upload/Worldwide_Cables__A6.png',
       objectPosition: 'center center'
     },
     {
-      title: "Client's Concept Modified — Slide 7",
+      title: "Client's Concept Modified - Slide 7",
       url: 'https://res.cloudinary.com/zpwicpo5/image/upload/Worldwide_Cables__A7.png',
       objectPosition: 'center center'
     }

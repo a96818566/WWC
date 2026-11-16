@@ -914,7 +914,7 @@ export const AdminPortal: React.FC<AdminPortalProps> = ({
                       <label className="text-[10px] text-zinc-500 font-bold block">Rate (PKR)</label>
                       <input
                         type="text"
-                        value={item.rate || '—'}
+                        value={item.rate || '-'}
                         onChange={(e) => handleUpdateEstimate(item.id, 'rate', e.target.value)}
                         className="w-full bg-zinc-900 border border-zinc-700 rounded px-2.5 py-1.5 text-xs text-white"
                       />
@@ -934,7 +934,7 @@ export const AdminPortal: React.FC<AdminPortalProps> = ({
                       <label className="text-[10px] text-zinc-500 font-bold block">Days</label>
                       <input
                         type="text"
-                        value={item.days !== undefined ? item.days : '—'}
+                        value={item.days !== undefined ? item.days : '-'}
                         onChange={(e) => handleUpdateEstimate(item.id, 'days', e.target.value)}
                         className="w-full bg-zinc-900 border border-zinc-700 rounded px-2.5 py-1.5 text-xs text-white text-center"
                       />
