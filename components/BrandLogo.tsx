@@ -9,7 +9,7 @@ interface BrandLogoProps {
 
 export const BrandLogo: React.FC<BrandLogoProps> = ({
   src,
-  alt = 'Nasharz Films Logo',
+  alt = 'Nasharz Labs Logo',
   className = 'h-6 w-auto object-contain',
   fallbackColor = '#1a1c1e',
 }) => {

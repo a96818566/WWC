@@ -220,7 +220,7 @@ export const AdminPortal: React.FC<AdminPortalProps> = ({
               <Sliders className="w-4 h-4 text-[#c69a53]" />
               Producer Backend Control Center
             </h1>
-            <p className="text-[11px] text-zinc-400">Logged in as Executive Admin (aati)</p>
+            <p className="text-[11px] text-zinc-400">Logged in as Executive Admin (wwcadmin)</p>
           </div>
         </div>
 
@@ -1008,11 +1008,11 @@ export const AdminPortal: React.FC<AdminPortalProps> = ({
                   </div>
 
                   <div>
-                    <label className="text-[11px] font-semibold text-zinc-400 block mb-1">Alaska Batteries Logo URL</label>
+                    <label className="text-[11px] font-semibold text-zinc-400 block mb-1">Worldwide Cables (WWC) Logo URL</label>
                     <input
                       type="text"
-                      value={deck.branding.alaskaLogo}
-                      onChange={(e) => handleUpdateBranding('alaskaLogo', e.target.value)}
+                      value={deck.branding.clientLogo}
+                      onChange={(e) => handleUpdateBranding('clientLogo', e.target.value)}
                       className="w-full bg-zinc-900 border border-zinc-700 rounded-lg px-3 py-2 text-xs text-white"
                     />
                   </div>

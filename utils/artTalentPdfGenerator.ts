@@ -376,19 +376,19 @@ export const VEHICLE_SECTIONS = [
         badge: 'Master Livery Option 1',
         url: 'https://res.cloudinary.com/dawlj9ne4/image/upload/Battery_Pehlwan_Branded_Veh_op1_esdu3i.png',
         mainVehicle: [
-          'Aerodynamic high-roof commercial vehicle with custom yellow-and-white Alaska livery',
+          'Aerodynamic high-roof commercial vehicle with custom yellow-and-white WWC livery',
           'Roof-mounted high-intensity strobe beacon array and technical diagnostic antennas',
           'Full front 3/4 view, side profile, rear deployable ramp, and slide-out diagnostic racks',
-          'Holds Alaska Graphite batteries, high-voltage oscilloscopes, and LED status meters'
+          'Holds WWC Graphite batteries, high-voltage oscilloscopes, and LED status meters'
         ],
         vehicleLook: [
           'Pristine, futuristic yet practical Pakistani emergency-response mobile laboratory',
-          'High-gloss Alaska Yellow (#F59E0B) and Arctic White dual-tone body styling',
-          'Prominent Alaska Batteries branding and "BATTERY PEHLWAN EMERGENCY UNIT" insignia',
+          'High-gloss WWC Yellow (#F59E0B) and Arctic White dual-tone body styling',
+          'Prominent Worldwide Cables branding and "BATTERY PEHLWAN EMERGENCY UNIT" insignia',
           'Sharp professional finish creating comedic contrast against real-world breakdown environments'
         ],
         props: [
-          'Hero Alaska Graphite Battery with 1:1 cutaway casing & 9-Month Replacement Warranty seal',
+          'Hero WWC Graphite Battery with 1:1 cutaway casing & 9-Month Replacement Warranty seal',
           'High-speed digital oscilloscope and diagnostic telemetry tablet',
           'Heavy-duty insulated jumper clamps and spark-arrestor cables',
           'Brushed aluminum mobile diagnostic flight cases and emergency LED work-lights'
@@ -402,13 +402,13 @@ export const VEHICLE_SECTIONS = [
         url: 'https://res.cloudinary.com/dawlj9ne4/image/upload/Battery_Pehlwan_Branded_Veh_jog7cv.png',
         mainVehicle: [
           'Sport-aero commercial high-roof van configuration with extended rear cargo bay',
-          'Full side-profile livery featuring dynamic speed-chevron Alaska brand graphics',
+          'Full side-profile livery featuring dynamic speed-chevron WWC brand graphics',
           'Rapid-access side gullwing doors exposing high-speed battery replacement charging bay',
           'Equipped with quick-crank mobile booster packs and graphite plate telemetry screens'
         ],
         vehicleLook: [
-          'Dynamic high-contrast Alaska Solar Gold & Ultra-Gloss Black accent scheme',
-          'Bold typographic Alaska logo across flank with reflective safety micro-prisms',
+          'Dynamic high-contrast WWC Solar Gold & Ultra-Gloss Black accent scheme',
+          'Bold typographic WWC logo across flank with reflective safety micro-prisms',
           'Matte graphite alloy wheels with all-terrain emergency response tires',
           'Crisp aerodynamic presence calibrated for rapid highway & city interventions'
         ],
@@ -416,7 +416,7 @@ export const VEHICLE_SECTIONS = [
           'Ultra-fast rapid-charge diagnostic dock with dual 12V/24V outputs',
           'Titanium-finish battery carrier handles and magnetic terminal alignment probes',
           'Wireless Bluetooth battery health analysis wand connected to mobile tablet',
-          'Emergency roadside traffic warning beacon pillars and Alaska floor mats'
+          'Emergency roadside traffic warning beacon pillars and WWC floor mats'
         ],
         rule: 'AERO LIVERY OPTION 2: Sleeker, motorsport-inspired rapid response aesthetic for high-speed urban transit commercial sequences.'
       },
@@ -433,7 +433,7 @@ export const VEHICLE_SECTIONS = [
         ],
         vehicleLook: [
           'Industrial-grade high-durability finish with high-visibility reflective hazard striping',
-          'Solid Arctic White base with bold Alaska Gold power-wave accents along the wheelbase',
+          'Solid Arctic White base with bold WWC Gold power-wave accents along the wheelbase',
           'Textured non-slip aluminum side-steps and heavy-duty roof rack for extra spare cells',
           'Maximum authority and rugged reliability for tough rural and industrial deployments'
         ],
@@ -441,7 +441,7 @@ export const VEHICLE_SECTIONS = [
           'Heavy-duty industrial carbon-pile battery load tester and digital impedance analyzer',
           'Heavy tractor & truck commercial battery lifting harness and safety clamps',
           'Protective technician utility gloves, safety glasses, and heavy torque wrenches',
-          'Portable high-output emergency floodlight tripod with Alaska branding'
+          'Portable high-output emergency floodlight tripod with WWC branding'
         ],
         rule: 'HEAVY UTILITY OPTION 3: Maximum rugged durability and high-capacity rescue capability suited for agricultural and commercial freight breakdown scenarios.'
       }
@@ -625,7 +625,7 @@ export const LOCATION_SHEETS = [
       'Active dock workers carrying seafood trays and heavy cargo blocks',
       'Refrigerated seafood transport truck with dead battery alongside charpai tea setup'
     ],
-    visualGoal: 'High contrast between traditional fishing port and massive Alaska mobile laboratory truck creates instant comedy.'
+    visualGoal: 'High contrast between traditional fishing port and massive WWC mobile laboratory truck creates instant comedy.'
   },
   {
     sheetNum: 'Loc 03',
@@ -676,7 +676,7 @@ export const LOCATION_SHEETS = [
       'Thousands of decorative fairy lights & vibrant marigold floral garlands (Haar)',
       'Central heavy-duty UPS / Inverter setup connected to main residential power board'
     ],
-    visualGoal: 'Total blackout freezes household in comic mid-action shock; Alaska battery instantly restores radiant illumination.'
+    visualGoal: 'Total blackout freezes household in comic mid-action shock; WWC battery instantly restores radiant illumination.'
   },
   {
     sheetNum: 'Loc 06',
@@ -690,7 +690,7 @@ export const LOCATION_SHEETS = [
     productionDesign: [
       'High-precision studio soundstage setup with acoustic sound-proofing & matte black seamless cyclorama',
       'Controlled high-speed phantom flex camera motion rig for ultra-slow motion macro sparking',
-      '1:1 acrylic cross-section hero cutaway battery showcasing Alaska internal graphite plate lattice',
+      '1:1 acrylic cross-section hero cutaway battery showcasing WWC internal graphite plate lattice',
       'High-voltage diagnostic oscilloscope workbenches, spark arrestor cables, and digital LED voltmeters'
     ],
     visualGoal: 'Hyper-stylized, razor-sharp technical diagnostic world showcasing internal graphite engineering, instant cranking power, and 9-Month Replacement Warranty.'
@@ -740,22 +740,22 @@ function createA4Page(
           </div>
         </div>
         <div>
-          <img src="${branding.alaskaLogo}" style="height: 34px; width: auto; object-fit: contain;" alt="Alaska Batteries" />
+          ${branding.clientLogo ? `<img src="${branding.clientLogo}" style="height: 34px; width: auto; object-fit: contain;" alt="Worldwide Cables" />` : `<span style="font-size: 13px; font-weight: 800; letter-spacing: 0.08em; color: #0f172a; text-transform: uppercase;">WORLDWIDE CABLES <span style="color: #c69a53;">(WWC)</span></span>`}
         </div>
       </div>
 
       <div style="margin-bottom: 8px;">
         <div style="font-size: 9.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; color: #c69a53; margin-bottom: 2px;">
-          ALASKA BATTERIES / LAUNCH DECK • CHAPTER ${chapterNumber}
+          WORLDWIDE CABLES / LAUNCH DECK • CHAPTER ${chapterNumber}
         </div>
         <h1 style="font-size: 21px; font-weight: 800; color: #09090b; margin: 0 0 4px 0; line-height: 1.15; letter-spacing: -0.02em;">
           ${docTitle} <span style="font-size: 14px; font-weight: 500; color: #64748b;">— ${docSubtitle}</span>
         </h1>
         <div style="display: flex; justify-content: space-between; align-items: center; font-size: 9.5px; color: #64748b; padding: 2px 0;">
           <span>Prepared By: <strong style="color: #0f172a;">Aatif Rasheed</strong> <span style="color: #b8860b; font-weight: 600;">(Producer / Director)</span></span>
-          <span>Client: <strong style="color: #0f172a;">Alaska Batteries</strong></span>
+          <span>Client: <strong style="color: #0f172a;">Worldwide Cables</strong></span>
           <span>Date: <strong style="color: #334155;">${dateStr}</strong></span>
-          <span>Ref: <strong style="color: #334155;">NF-AB-CH${chapterNumber}</strong></span>
+          <span>Ref: <strong style="color: #334155;">NF-WWC-CH${chapterNumber}</strong></span>
         </div>
       </div>
 
@@ -775,7 +775,7 @@ function createA4Page(
           <img src="${branding.nasharzIcon}" style="height: 16px; width: auto; object-fit: contain;" alt="NF" />
           <span style="font-weight: 700; color: #0f172a;">Nasharz Films</span>
           <span>/</span>
-          <span>Alaska Batteries Deck</span>
+          <span>Worldwide Cables Deck</span>
         </div>
         <div style="font-weight: 700; color: #c69a53;">
           Chapter ${chapterNumber}: ${docTitle}
@@ -813,7 +813,7 @@ function createA4Page(
 export async function generateWardrobeLookbookPDF(
   chapter: Chapter,
   branding: BrandingConfig,
-  clientName: string = 'Alaska Batteries Client',
+  clientName: string = 'Worldwide Cables Client',
   options?: PDFGenOptions
 ): Promise<PDFGenResult | void> {
   const sandbox = document.createElement('div');
@@ -1031,7 +1031,7 @@ export async function generateWardrobeLookbookPDF(
             <div style="font-size: 8px; font-weight: 700; color: #b8860b; margin-top: 1px;">
               Prepared By: <span style="color: #0f172a;">Aatif Rasheed</span> • Producer / Director • Nasharz Films
             </div>
-            <div style="font-size: 7px; color: #64748b; margin-top: 1px;">Proprietary character lookbook and on-set directives approved for Alaska Batteries 2026 Commercials.</div>
+            <div style="font-size: 7px; color: #64748b; margin-top: 1px;">Proprietary character lookbook and on-set directives approved for Worldwide Cables 2026 Commercials.</div>
           </div>
           <div style="text-align: right; display: flex; flex-direction: column; align-items: flex-end;">
             <div style="font-size: 7px; text-transform: uppercase; letter-spacing: 0.08em; color: #b8860b; font-weight: 800; margin-bottom: 2px;">Official Executive Seal</div>
@@ -1048,7 +1048,7 @@ export async function generateWardrobeLookbookPDF(
   pages.forEach((p, idx) => {
     p.footerArea.innerHTML = `
       <span>Nasharz Films • Confidential</span>
-      <span>Alaska Batteries Campaign • Wardrobe Lookbook</span>
+      <span>Worldwide Cables Campaign • Wardrobe Lookbook</span>
       <span style="font-weight: 700; color: #b8860b;">Page ${idx + 1} of ${totalPages}</span>
     `;
   });
@@ -1070,7 +1070,7 @@ export async function generateWardrobeLookbookPDF(
       pdf.addImage(canvas.toDataURL('image/jpeg', 0.92), 'JPEG', 0, 0, 210, 297);
     }
 
-    const filename = options?.customFileName || '01_Nasharz_Alaska_Wardrobe_Lookbook.pdf';
+    const filename = options?.customFileName || '01_Nasharz_WWC_Wardrobe_Lookbook.pdf';
     if (options?.returnBlob) {
       return { blob: pdf.output('blob'), filename, folder: 'Chapter_07_Art_and_Talent' };
     } else {
@@ -1090,7 +1090,7 @@ export async function generateWardrobeLookbookPDF(
 export async function generateVehiclesPropsPDF(
   chapter: Chapter,
   branding: BrandingConfig,
-  clientName: string = 'Alaska Batteries Client',
+  clientName: string = 'Worldwide Cables Client',
   options?: PDFGenOptions
 ): Promise<PDFGenResult | void> {
   const sandbox = document.createElement('div');
@@ -1299,7 +1299,7 @@ export async function generateVehiclesPropsPDF(
           <div style="font-size: 8px; font-weight: 700; color: #b8860b; margin-top: 1px;">
             Prepared By: <span style="color: #0f172a;">Aatif Rasheed</span> • Producer / Director • Nasharz Films
           </div>
-          <div style="font-size: 7px; color: #64748b; margin-top: 1px;">Proprietary mobile laboratory & commercial prop staging fleet for Alaska Batteries 2026 Commercials.</div>
+          <div style="font-size: 7px; color: #64748b; margin-top: 1px;">Proprietary mobile laboratory & commercial prop staging fleet for Worldwide Cables 2026 Commercials.</div>
         </div>
         <div style="text-align: right; display: flex; flex-direction: column; align-items: flex-end;">
           <div style="font-size: 7px; text-transform: uppercase; letter-spacing: 0.08em; color: #b8860b; font-weight: 800; margin-bottom: 2px;">Official Executive Seal</div>
@@ -1315,7 +1315,7 @@ export async function generateVehiclesPropsPDF(
   pages.forEach((p, idx) => {
     p.footerArea.innerHTML = `
       <span>Nasharz Films • Confidential</span>
-      <span>Alaska Batteries Campaign • Vehicle & Props Fleet Lookbook</span>
+      <span>Worldwide Cables Campaign • Vehicle & Props Fleet Lookbook</span>
       <span style="font-weight: 700; color: #b8860b;">Page ${idx + 1} of ${totalPages}</span>
     `;
   });
@@ -1337,7 +1337,7 @@ export async function generateVehiclesPropsPDF(
       pdf.addImage(canvas.toDataURL('image/jpeg', 0.92), 'JPEG', 0, 0, 210, 297);
     }
 
-    const filename = options?.customFileName || '02_Nasharz_Alaska_Vehicles_and_Props_Fleet.pdf';
+    const filename = options?.customFileName || '02_Nasharz_WWC_Vehicles_and_Props_Fleet.pdf';
     if (options?.returnBlob) {
       return { blob: pdf.output('blob'), filename, folder: 'Chapter_07_Art_and_Talent' };
     } else {
@@ -1354,7 +1354,7 @@ export async function generateVehiclesPropsPDF(
 export async function generateLocationsDossierPDF(
   chapter: Chapter,
   branding: BrandingConfig,
-  clientName: string = 'Alaska Batteries Client',
+  clientName: string = 'Worldwide Cables Client',
   options?: PDFGenOptions
 ): Promise<PDFGenResult | void> {
   const sandbox = document.createElement('div');
@@ -1578,7 +1578,7 @@ export async function generateLocationsDossierPDF(
         <div style="font-size: 9px; font-weight: 700; color: #b8860b; margin-top: 1px;">
           Prepared By: <span style="color: #0f172a;">Aatif Rasheed</span> • Producer / Director
         </div>
-        <div style="font-size: 8px; color: #64748b; margin-top: 2px;">Turnkey location agreements secured for Alaska Batteries 2026 Campaign.</div>
+        <div style="font-size: 8px; color: #64748b; margin-top: 2px;">Turnkey location agreements secured for Worldwide Cables 2026 Campaign.</div>
       </div>
       <div style="text-align: right; display: flex; flex-direction: column; align-items: flex-end;">
         <div style="font-size: 7.5px; text-transform: uppercase; letter-spacing: 0.08em; color: #b8860b; font-weight: 700; margin-bottom: 2px;">Official Authorization</div>
@@ -1594,7 +1594,7 @@ export async function generateLocationsDossierPDF(
   pages.forEach((p, idx) => {
     p.footerArea.innerHTML = `
       <span>Nasharz Films • Confidential</span>
-      <span>Alaska Batteries Campaign • Location Scouting Dossier</span>
+      <span>Worldwide Cables Campaign • Location Scouting Dossier</span>
       <span style="font-weight: 700; color: #b8860b;">Page ${idx + 1} of ${totalPages}</span>
     `;
   });
@@ -1616,7 +1616,7 @@ export async function generateLocationsDossierPDF(
       pdf.addImage(canvas.toDataURL('image/jpeg', 0.92), 'JPEG', 0, 0, 210, 297);
     }
 
-    const filename = options?.customFileName || '03_Nasharz_Alaska_Location_Scouting_Dossiers.pdf';
+    const filename = options?.customFileName || '03_Nasharz_WWC_Location_Scouting_Dossiers.pdf';
     if (options?.returnBlob) {
       return { blob: pdf.output('blob'), filename, folder: 'Chapter_07_Art_and_Talent' };
     } else {
@@ -1633,7 +1633,7 @@ export async function generateLocationsDossierPDF(
 export async function generateTalentAgreementPDF(
   chapter: Chapter,
   branding: BrandingConfig,
-  clientName: string = 'Alaska Batteries Client',
+  clientName: string = 'Worldwide Cables Client',
   options?: PDFGenOptions
 ): Promise<PDFGenResult | void> {
   const sandbox = document.createElement('div');
@@ -1687,7 +1687,7 @@ export async function generateTalentAgreementPDF(
           <div style="font-size: 8px; line-height: 1.4; color: #334155;">
             <strong>Artist Name:</strong> Mr. Iftikhar Ahmad Sheikh (p/k/a Iftikhar Thakur)<br/>
             <strong>Campaign Role:</strong> Brand Ambassador & Character Variants<br/>
-            <strong>Exclusivity:</strong> Exclusive to Alaska Batteries across all battery categories for Pakistan & GCC territories.
+            <strong>Exclusivity:</strong> Exclusive to Worldwide Cables across all battery categories for Pakistan & GCC territories.
           </div>
         </div>
 
@@ -1742,7 +1742,7 @@ export async function generateTalentAgreementPDF(
   pages.forEach((p, idx) => {
     p.footerArea.innerHTML = `
       <span>Nasharz Films • Confidential</span>
-      <span>Alaska Batteries Campaign • Celebrity Talent Agreement</span>
+      <span>Worldwide Cables Campaign • Celebrity Talent Agreement</span>
       <span style="font-weight: 700; color: #b8860b;">Page ${idx + 1} of ${pages.length}</span>
     `;
   });
@@ -1764,7 +1764,7 @@ export async function generateTalentAgreementPDF(
       pdf.addImage(canvas.toDataURL('image/jpeg', 0.92), 'JPEG', 0, 0, 210, 297);
     }
 
-    const filename = options?.customFileName || '04_Nasharz_Alaska_Talent_Agreement_and_Casting.pdf';
+    const filename = options?.customFileName || '04_Nasharz_WWC_Talent_Agreement_and_Casting.pdf';
     if (options?.returnBlob) {
       return { blob: pdf.output('blob'), filename, folder: 'Chapter_07_Art_and_Talent' };
     } else {
@@ -1790,10 +1790,10 @@ export async function generateTalentAgreementPDF(
 export async function generateChapter07CompletePDF(
   chapter: Chapter,
   branding: BrandingConfig,
-  clientName: string = 'Alaska Batteries Client',
+  clientName: string = 'Worldwide Cables Client',
   options?: PDFGenOptions
 ): Promise<PDFGenResult | void> {
-  const customFileName = options?.customFileName || '05_Nasharz_Alaska_Chapter07_Master_Lookbook_Complete.pdf';
+  const customFileName = options?.customFileName || '05_Nasharz_WWC_Chapter07_Master_Lookbook_Complete.pdf';
   return generateChapterPDF(chapter, branding, clientName, {
     ...options,
     customFileName

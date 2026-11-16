@@ -36,9 +36,47 @@ export function urduToRomanUrdu(text: string): string {
     [/سپر ہر قدم/g, 'Super Har Qadam'],
     [/ہر لمحہ اعتماد/g, 'Har Lamha Aitemaad'],
     [/اعتماد کا نیا نام/g, 'Aitemaad Ka Naya Naam'],
-    [/الاسکا بیٹریز/g, 'Alaska Batteries'],
-    [/الاسکا/g, 'Alaska'],
+    [/Worldwide Cables/g, 'Worldwide Cables'],
+    [/WWC/g, 'WWC'],
     [/اعتماد/g, 'Aitemaad'],
+    [/اب پی وی سی کی قیمت میں ایل ایس زیڈ ایچ ٹیکنالوجی، نہ آگ، نہ دھواں اور نہ ہی زہریلی گیس۔/g, 'Ab PVC ki qeemat mein LSZH technology, na aag, na dhuwan aur na hi zehreeli gas.'],
+    [/کیبل جس میں کرنٹ طاقت بن کر دوڑے، خوف بن کر نہیں\.\.\./g, 'Cable jis mein current taaqat ban kar dauray, khauf ban kar nahin...'],
+    [/ورلڈ وائیڈ کیبلز۔ آپ کا حفاظتی کرنٹ۔/g, 'Worldwide Cables. Aap ka Hifazti Current.'],
+    [/پہچان نام سے نہیں، کام سے!/g, 'Pehchaan naam se nahin, kaam se!'],
+    [/حفاظتی کرنٹ\s*\(Hifazti Current\)/gi, 'Hifazti Current'],
+    [/حفاظتی کرنٹ/g, 'Hifazti Current'],
+    [/نہ آگ/g, 'Na Aag'],
+
+    // Route 1 Concept Scripts (Chaudhry Sb, Guru Ji, Chamkila)
+    [/ہاں جی فیقے، اس نے تکا لگایا\.\.\. اب میرا نشانہ چیک کر!/g, 'Haan ji Feeqay, iss ne tukka lagaya... ab mera nishana check kar!'],
+    [/چوہدری صاحب، میں نے تو سب سے مشہور کیبل لگائی تھی\.\.\. مجھے کیا پتا ٹیوب ویل کا پٹاخہ بج جائے گا!/g, 'Chaudhry Sahib, maine to sab se mashhoor cable lagayi thi... mujhe kya pata tubewell ka patakha baj jayega!'],
+    [/تجھے سمجھایا نہیں؟ نام دیکھ کر نہیں، کام دیکھ کر چیز خریدو۔/g, 'Tujhe samjhaya nahin? Naam dekh kar nahin, kaam dekh kar cheez kharido.'],
+    [/کر دیا نا بڑا نقصان!/g, 'Kar diya na bara nuqsaan!'],
+    [/چھت کے اندر، دیواروں کے پیچھے، جہاں نظر نہیں آتا\.\.\. وہاں بھی ورلڈ وائیڈ ایل ایس زیڈ ایچ آپ کی حفاظت کرتا ہے۔/g, 'Chhat ke andar, deewaron ke peechay, jahan nazar nahin aata... wahan bhi Worldwide LSZH aap ki hifazat karta hai.'],
+    [/کیبل جس میں کرنٹ طاقت بن کر دوڑے، خوف بن کر نہیں\.\.\. آپ کا حفاظتی کرنٹ۔ ورلڈ وائیڈ کیبلز۔/g, 'Cable jis mein current taaqat ban kar dauray, khauf ban kar nahin... Aap ka Hifazti Current. Worldwide Cables.'],
+    [/اب پتا چلا شارٹ سرکٹ سے کیا ہوتا ہے؟/g, 'Ab pata chala short circuit se kya hota hai?'],
+    [/گرو جی، میں تو ہمیشہ مشہور کیبل استعمال کرتا ہوں۔ مجھے کیا پتا تھا، کیبل ڈھیلی پڑ جائے گی!/g, 'Guru Ji, main to hamesha mashhoor cable istemaal karta hoon. Mujhe kya pata tha, cable dheeli par jayegi!'],
+    [/سمجھایا نہیں تھا؟ ہمیشہ کام دیکھ کر انتخاب کرو، نام دیکھ کر نہیں۔/g, 'Samjhaya nahin tha? Hamesha kaam dekh kar intekhaab karo, naam dekh kar nahin.'],
+    [/چھیالیس ہزار تین سو بیس کا بل!/g, 'Chheyaalis hazaar teen sau bees ka bill!'],
+    [/چمکیلا صاحب، میں نے تو سب سے مشہور کیبل لگائی تھی\.\.\./g, 'Chamkila Sahib, maine to sab se mashhoor cable lagayi thi...'],
+    [/جب تک میرا بل کم نہیں ہوتا، تب تک تم انہی کپڑوں میں گھومو گے!/g, 'Jab tak mera bill kam nahin hota, tab tak tum inhi kapron mein ghoomo gay!'],
+    [/بل کیوچر!/g, 'Bill-Couture!'],
+    [/سن مستری۔ فیشن میں نام چلتا ہے، کیبل میں نہیں۔ ہمیشہ پرفارمنس دیکھ کر چنو، پبلیسٹی یا نام دیکھ کر نہیں۔/g, 'Sun mistri. Fashion mein naam chalta hai, cable mein nahin. Hamesha performance dekh kar chuno, publicity ya naam dekh kar nahin.'],
+    [/اب پی وی سی کی قیمت میں ایل ایس زیڈ ایچ ٹیکنالوجی، ننانوے اعشاریہ ننانوے فیصد خالص تانبے کے ساتھ۔/g, 'Ab PVC ki qeemat mein LSZH technology, 99.99 feesad khaalis taambay ke saath.'],
+    [/چل، نیا کیبل لگاؤ\.\.\. پھر دیکھتے ہیں! پہچان نام سے نہیں، کام سے!/g, 'Chal, naya cable lagao... phir dekhtay hain! Pehchaan naam se nahin, kaam se!'],
+
+    // Brief Section 7 Client Script (Urdu)
+    [/جاوید شیخ:/g, 'Javed Sheikh:'],
+    [/“?"?مارکیٹ میں بڑے بڑے نام ہیں\.\.\./g, '"Market mein baray baray naam hain...'],
+    [/کوئی اپنے نام پر بیچتا ہے، کوئی اپنی شہرت پر۔/g, 'Koi apnay naam par bechta hai, koi apni shohrat par.'],
+    [/لیکن میرا ایک سوال ہے\.\.\./g, 'Lekin mera aik sawaal hai...'],
+    [/نام بڑا ہونے سے کیبل بھی بہتر ہو جاتی ہے؟/g, 'Naam bara honay se cable bhi behtar ho jaati hai?'],
+    [/میں نام نہیں دیکھتا۔ میں دیکھتا ہوں کوالٹی، پرفارمنس اور پیسے کی اصل ویلیو۔/g, 'Main naam nahin dekhta. Main dekhta hoon quality, performance aur paisay ki asal value.'],
+    [/کیونکہ جب بات ہو گھر کی سیفٹی اور سالوں کے اعتماد کی\.\.\./g, 'Kyun keh jab baat ho ghar ki safety aur saalon ke aitemaad ki...'],
+    [/تو میں سمجھوتہ نہیں کرتا!/g, 'To main samjhauta nahin karta!'],
+    [/میرا انتخاب ہے\.\.\./g, 'Mera intekhaab hai...'],
+    [/ورلڈ وائیڈ کیبلز!/g, 'Worldwide Cables!'],
+    [/نام سے نہیں، کام سے پہچان!"?/g, 'Naam se nahin, kaam se pehchaan!"'],
 
     // Onomatopoeia & Sounds
     [/کڑاک!\s*چٹاک!\s*پٹاک!/g, 'Kadaak! Chataak! Pataak!'],
@@ -86,8 +124,8 @@ export function urduToRomanUrdu(text: string): string {
     [/اپنی لائف میں جادو جگانا ہے،/g, 'Apni life mein jaadoo jagaana hai,'],
     [/تو اپنی بیٹری کو رکھو ہمیشہ چارج!”/g, 'to apni battery ko rakho hamesha charge!”'],
     [/تو اپنی بیٹری کو رکھو ہمیشہ چارج!/g, 'to apni battery ko rakho hamesha charge!'],
-    [/جیسے الاسکا کی گریفائٹ ٹیکنالوجی\.\.\.”/g, '“Jaisay Alaska ki Graphite Technology...”'],
-    [/جیسے الاسکا کی گریفائٹ ٹیکنالوجی\.\.\./g, 'Jaisay Alaska ki Graphite Technology...'],
+    [/جیسے WWC کی گریفائٹ ٹیکنالوجی\.\.\.”/g, '“Jaisay WWC ki Graphite Technology...”'],
+    [/جیسے WWC کی گریفائٹ ٹیکنالوجی\.\.\./g, 'Jaisay WWC ki Graphite Technology...'],
     [/“\s*کرتی ہے حفاظت/g, '“...karti hai hifaazat'],
     [/کرتی ہے حفاظت/g, 'karti hai hifaazat'],
     [/“اور ۹ ماہ کی مفت تبدیلی کی وارنٹی دیتی ہے اعتماد۔”/g, '“Aur 9 maah ki muft tabdeeli ki warranty deti hai aitemaad.”'],
@@ -107,10 +145,10 @@ export function urduToRomanUrdu(text: string): string {
     [/گھٹیا کوالٹی کے بھی/g, 'Ghatiya quality kay bhi'],
     [/مہنگے ہیں ریٹ/g, 'Mehangay hain rate'],
     [/لائف نہیں رکتی یہاں۔۔۔ چلتی ہی جاتی ہے/g, 'Life nahin rukti yahan... chalti hi jaati hai'],
-    [/اینی فاسٹ لائف میں۔۔۔ الاسکا ہی کام آتی ہے/g, 'Aeni fast life mein... Alaska hi kaam aati hai'],
-    [/الاسکا پہ اعتماد/g, 'Alaska pe aitmaad'],
+    [/اینی فاسٹ لائف میں۔۔۔ WWC ہی کام آتی ہے/g, 'Aeni fast life mein... WWC hi kaam aati hai'],
+    [/WWC پہ اعتماد/g, 'WWC pe aitmaad'],
     [/سڑکوں پہ اڑی جانا/g, 'Sadkon pe udi jaana'],
-    [/الاسکا کا ہوجونال/g, 'Alaska ka hojo naal'],
+    [/WWC کا ہوجونال/g, 'WWC ka hojo naal'],
     [/کدی نہیں گھبرانا/g, 'Kadi nahin ghabraana'],
     [/اپنا ذاتی گھر ہو/g, 'Apna zaati ghar ho'],
     [/کرائے کا مکان ہو/g, 'Kiraaye ka makaan ho'],
@@ -122,7 +160,7 @@ export function urduToRomanUrdu(text: string): string {
     [/لائف رک جاتی ہو/g, 'Life ruk jaati ho'],
     [/اندھیرا ستائے/g, 'Andhera sataaye'],
     [/ہوا بھی نہیں آتی ہو/g, 'Hawa bhi nahin aati ho'],
-    [/ایسے میں الاسکا ہی/g, 'Aisay mein Alaska hi'],
+    [/ایسے میں WWC ہی/g, 'Aisay mein WWC hi'],
     [/خوشیاں پھیلاتی ہے/g, 'Khushiyan phailaati hai'],
     [/سارے بلب پنکھے/g, 'Saaray bulb pankhay'],
     [/ٹی وی چلاتی ہے/g, 'TV chalaati hai']
@@ -210,8 +248,8 @@ function parseTextToBlocks(rawText: string): HTMLElement[] {
       continue;
     }
 
-    // Route Header banner: e.g. "ALASKA BATTERIES — TVC ROUTE 1", "ALASKA BATTERIES — TVC ROUTE 2", "ALASKA BATTERIES — TVC ROUTE 3", "ALASKA BATTERIES — TVC ROUTE 3A", "CAMPAIGN FILM CONCEPTS"
-    const isRouteHeader = /^(ALASKA BATTERIES\s*[—–-]\s*TVC ROUTE|TVC ROUTE\s+[0-9]+[A-Z]?|CAMPAIGN FILM CONCEPTS)/i.test(trimmed);
+    // Route Header banner: e.g. "WORLDWIDE CABLES: TVC ROUTE 1", "CAMPAIGN FILM CONCEPTS"
+    const isRouteHeader = /^((?:WORLDWIDE CABLES|WWC)\s*[:—–-]\s*TVC ROUTE|TVC ROUTE\s+[0-9]+[A-Z]?|CAMPAIGN FILM CONCEPTS)/i.test(trimmed);
     if (isRouteHeader) {
       const rh = document.createElement('div');
       rh.style.background = '#f1f5f9';
@@ -272,7 +310,7 @@ function parseTextToBlocks(rawText: string): HTMLElement[] {
     // Main section heading: e.g. "1. COMPETITOR ANALYSIS..." or "CONFIDENTIAL - CREATIVE BRIEF"
     const isMainHeading =
       (/^[0-9]+\.\s+[A-Z\s&/—–:-]{3,}/.test(trimmed) ||
-      /^(CONFIDENTIAL|CAMPAIGN|STORYBOARD|ART DIRECTION|PRODUCTION|ESTIMATE|KEY DELIVERABLES|PAKISTANI BATTERY|BRAND FOUNDATION|TAGLINE \/ SLOGAN|STRATEGIC CONCLUSION|CONCEPT\s+[0-9]|ROUTE\s+[0-9]|ALASKA BATTERIES|MODELING,\s+TALENT|SIGNATURES)/i.test(trimmed)) &&
+      /^(CONFIDENTIAL|CAMPAIGN|STORYBOARD|ART DIRECTION|PRODUCTION|ESTIMATE|KEY DELIVERABLES|PAKISTANI BATTERY|BRAND FOUNDATION|TAGLINE \/ SLOGAN|STRATEGIC CONCLUSION|CONCEPT\s+[0-9]|ROUTE\s+[0-9]|WORLDWIDE CABLES|MODELING,\s+TALENT|SIGNATURES|TWO CLAIMS TO LOCK)/i.test(trimmed)) &&
       trimmed.length < 90;
 
     if (isMainHeading) {
@@ -296,8 +334,8 @@ function parseTextToBlocks(rawText: string): HTMLElement[] {
       continue;
     }
 
-    // Scene Headings & Jingle Sections (e.g. "OPEN — WORKSHOP", "CORE IDEA", "THE SECOND BATTERY", "JINGLE", "COMPLETE JINGLE", "THE FILM", "PART 01", "PRODUCT SCOPE")
-    const isSceneOrJingleHeading = /^(OPEN|THE GURU|THE EXPERT TEST|THE PHELWAN TEST|THE PHELWAN ARRIVAL|\(THE ARRIVAL\)|THE ARRIVAL|THE PROBLEM|THE TWIST|\(Twist\)|RESOLUTION|ALASKA REVEAL|\(ALASKA REVEAL\)|THE SECOND BATTERY|JINGLE|COMPLETE JINGLE|COMPLETE MASTER JINGLE|Jingle & Dialogue Options|& Dialogue Options|Dialogue Options|Ending Dialogues|Option\s+[A-C]|Option-[A-C]|THE ENERGY BUILDS|RETURN TO THE WORKSHOP|PRODUCT REVEAL|END FRAME|END SLIDE|End Logo|End Tail|CORE IDEA|CUT TO|THE FILM|PART 01|PART 02|PRODUCT SCOPE|CURRENT PRESENTATION|FUTURE EXPANSION|LIGHTS OUT|JUGGALBANDI & RAP)\b/i.test(trimmed);
+    // Scene Headings & Jingle Sections
+    const isSceneOrJingleHeading = /^(OPEN|THE NISHANA|THE CONFESSION|THE LESSON|THE PRODUCT STORY|SPLIT SCREEN|WORLDWIDE REVEAL|PRODUCT PROOF|THE COSTUME|THE GURU|THE EXPERT TEST|THE PHELWAN TEST|THE PHELWAN ARRIVAL|\(THE ARRIVAL\)|THE ARRIVAL|THE PROBLEM|THE TWIST|\(Twist\)|RESOLUTION|WWC REVEAL|\(WWC REVEAL\)|THE SECOND BATTERY|JINGLE|COMPLETE JINGLE|COMPLETE MASTER JINGLE|Jingle & Dialogue Options|& Dialogue Options|Dialogue Options|Ending Dialogues|Option\s+[A-C]|Option-[A-C]|THE ENERGY BUILDS|RETURN TO THE WORKSHOP|PRODUCT REVEAL|END FRAME|END SLIDE|End Logo|End Tail|CORE IDEA|CUT TO|THE FILM|PART 01|PART 02|PRODUCT SCOPE|CURRENT PRESENTATION|FUTURE EXPANSION|LIGHTS OUT|JUGGALBANDI & RAP)\b/i.test(trimmed);
     if (isSceneOrJingleHeading) {
       const sh = document.createElement('div');
       sh.style.fontWeight = '800';
@@ -442,8 +480,8 @@ function parseTextToBlocks(rawText: string): HTMLElement[] {
       continue;
     }
 
-    // Key-Value insight statements (e.g. "Truth: I can’t afford to stop.", "Positioning: Alaska is...")
-    const isKeyValue = /^(Truth|Vision|Purpose|Belief|Positioning|Brand Positioning|Brand Promise|Tagline|Personality|Voice|Key USP|Trigger|Alaska Product|Demand Drivers|Required Battery Types|Core Human Need|Battery Opportunity):\s*(.+)$/i.test(trimmed);
+    // Key-Value insight statements (e.g. "Truth: I can’t afford to stop.", "Positioning: WWC is...")
+    const isKeyValue = /^(Truth|Vision|Purpose|Belief|Positioning|Brand Positioning|Brand Promise|Tagline|Personality|Voice|Key USP|Trigger|WWC Product|Demand Drivers|Required Battery Types|Core Human Need|Battery Opportunity):\s*(.+)$/i.test(trimmed);
     if (isKeyValue) {
       const match = trimmed.match(/^([^:]+):\s*(.+)$/);
       if (match) {
@@ -506,7 +544,7 @@ function parseTextToBlocks(rawText: string): HTMLElement[] {
 export async function generateChapterPDF(
   chapter: Chapter,
   branding: BrandingConfig,
-  clientName: string = 'Alaska Batteries Client',
+  clientName: string = 'Worldwide Cables Client',
   options?: { returnBlob?: boolean; customFileName?: string; onProgress?: (status: string) => void }
 ): Promise<{ blob: Blob; filename: string; folder: string } | void> {
   // Master offscreen container
@@ -578,22 +616,22 @@ export async function generateChapterPDF(
             </div>
           </div>
           <div>
-            <img src="${branding.alaskaLogo}" style="height: 36px; width: auto; object-fit: contain;" alt="Alaska Batteries" />
+            ${branding.clientLogo ? `<img src="${branding.clientLogo}" style="height: 36px; width: auto; object-fit: contain;" alt="Worldwide Cables" />` : `<span style="font-size: 13px; font-weight: 800; letter-spacing: 0.08em; color: #0f172a; text-transform: uppercase;">WORLDWIDE CABLES <span style="color: #c69a53;">(WWC)</span></span>`}
           </div>
         </div>
 
         <div style="margin-bottom: 10px;">
           <div style="font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; color: #c69a53; margin-bottom: 3px;">
-            ALASKA BATTERIES / LAUNCH DECK • CHAPTER ${chapter.number}
+            WORLDWIDE CABLES / LAUNCH DECK • CHAPTER ${chapter.number}
           </div>
           <h1 style="font-size: 24px; font-weight: 800; color: #09090b; margin: 0 0 6px 0; line-height: 1.15; letter-spacing: -0.02em;">
             ${romanTitle} <span style="font-size: 16px; font-weight: 500; color: #64748b;">— ${chapter.category}</span>
           </h1>
           <div style="display: flex; justify-content: space-between; align-items: center; font-size: 10px; color: #64748b; padding: 4px 0; margin-top: 2px;">
             <span>Prepared By: <strong style="color: #0f172a;">Aatif Rasheed</strong> <span style="color: #b8860b; font-weight: 600;">(Producer / Director)</span></span>
-            <span>Client: <strong style="color: #0f172a;">Alaska Batteries</strong></span>
+            <span>Client: <strong style="color: #0f172a;">Worldwide Cables</strong></span>
             <span>Date: <strong style="color: #334155;">${dateStr}</strong></span>
-            <span>Ref: <strong style="color: #334155;">NF-AB-CH${chapter.number}</strong></span>
+            <span>Ref: <strong style="color: #334155;">NF-WWC-CH${chapter.number}</strong></span>
           </div>
         </div>
 
@@ -614,7 +652,7 @@ export async function generateChapterPDF(
             <img src="${branding.nasharzIcon}" style="height: 18px; width: auto; object-fit: contain;" alt="NF" />
             <span style="font-weight: 700; color: #0f172a;">Nasharz Films</span>
             <span>/</span>
-            <span>Alaska Batteries Deck</span>
+            <span>Worldwide Cables Deck</span>
           </div>
           <div style="font-weight: 700; color: #c69a53;">
             Chapter ${chapter.number}: ${romanTitle}
@@ -652,8 +690,12 @@ export async function generateChapterPDF(
     return struct;
   };
 
-  const isStoryboard = chapter.id === 'storyboards' || chapter.number === '06';
-  const isArtTalent = chapter.id === 'art-talent' || chapter.number === '07';
+  const isStoryboard =
+    chapter.id === 'storyboards' ||
+    chapter.number === '06' ||
+    chapter.id === 'art-talent' ||
+    chapter.number === '07';
+  const isArtTalent = false;
 
   // Helper: Convert any remote image to high quality base64 data URL with multiple fallbacks
   const loadBase64Image = async (
@@ -663,35 +705,57 @@ export async function generateChapterPDF(
     return loadBase64ImageFast(rawUrl, fallbackTitle);
   };
 
-  if (isStoryboard && chapter.galleryImages && chapter.galleryImages.length > 0) {
+  if (isStoryboard && ((chapter.folders && chapter.folders.length > 0) || (chapter.galleryImages && chapter.galleryImages.length > 0))) {
     // -------------------------------------------------------------
     // STORYBOARD DEDICATED PDF FLOW:
     // 1. Title Cover Page: Centered title text
-    // 2. Storyboard Pages: Raw full-page original uncropped images
-    // 3. Concluding End Page: Key points / summary & official seal stamp
+    // 2. Section Divider Page per Concept (Bold Reverse White-on-Black Strip)
+    // 3. Storyboard Pages: Bold Reverse Black Header Strip + Full Uncropped Image
+    // 4. Concluding End Page: Key points / summary & official seal stamp
     // -------------------------------------------------------------
 
-    // Extract storyboard metadata (Concept Name / Product)
-    const activeFolder = chapter.folders && chapter.folders.length > 0 ? chapter.folders[0] : null;
-    const titleVal = urduToRomanUrdu(activeFolder?.name || 'Storyboard Master');
-    const productVal = activeFolder?.product || (titleVal.toLowerCase().includes('msb') ? 'Alaska Batteries Master Storyboard' : 'ALASKA BATTERIES');
+    const sbSections =
+      chapter.folders && chapter.folders.length > 0
+        ? chapter.folders.map((folder, idx) => ({
+            label: urduToRomanUrdu(folder.name || `Concept ${idx + 1}`).toUpperCase(),
+            subtitle: urduToRomanUrdu(folder.conceptName || `Storyboard ${idx + 1}`),
+            product: folder.product || 'WORLDWIDE CABLES',
+            images: folder.images || []
+          }))
+        : [
+            {
+              label: 'CONCEPT 1',
+              subtitle: 'Storyboard 1',
+              product: 'WORLDWIDE CABLES',
+              images: chapter.galleryImages || []
+            }
+          ];
+
+    const allSbImages = sbSections.flatMap((s) => s.images);
+    if (allSbImages.length === 0) {
+      document.body.removeChild(sandbox);
+      return;
+    }
+
+    const titleVal = sbSections.map((s) => s.label).join(' & ');
+    const productVal = 'WORLDWIDE CABLES';
 
     // Preload first image dimensions
-    const firstImgData = await loadBase64Image(chapter.galleryImages[0].url);
+    const firstImgData = await loadBase64Image(allSbImages[0].url);
     const isLandscape = firstImgData.aspect >= 1.0;
-    
+
     const baseW = isLandscape ? 1123 : 794;
     const baseH = isLandscape ? 794 : 1123;
 
     // Direct Storyboard PDF item list
     interface SbPdfPage {
-      type: 'title' | 'image' | 'end';
+      type: 'title' | 'divider' | 'image' | 'end';
       title?: string;
+      sectionLabel?: string;
+      slideLabel?: string;
       dataUrl?: string;
       domElement?: HTMLDivElement;
       aspect?: number;
-      widthMm?: number;
-      heightMm?: number;
       orientation?: 'portrait' | 'landscape';
     }
     const sbPages: SbPdfPage[] = [];
@@ -717,24 +781,24 @@ export async function generateChapterPDF(
     titlePageEl.innerHTML = `
       <!-- Top branding -->
       <div style="position: absolute; top: 36px; left: 48px; right: 48px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(0,0,0,0.08); padding-bottom: 14px;">
-        <img src="${branding.blackLogo || branding.nasharzIcon}" style="height: 34px; width: auto; object-fit: contain;" alt="Nasharz Films" />
-        <img src="${branding.alaskaLogo}" style="height: 36px; width: auto; object-fit: contain;" alt="Alaska" />
+        <img src="${branding.nasharzIcon}" style="height: 34px; width: auto; object-fit: contain;" alt="Nasharz Films" />
+        ${branding.clientLogo ? `<img src="${branding.clientLogo}" style="height: 36px; width: auto; object-fit: contain;" alt="Worldwide Cables" />` : `<span style="font-size: 13px; font-weight: 800; letter-spacing: 0.08em; color: #0f172a; text-transform: uppercase;">WORLDWIDE CABLES <span style="color: #c69a53;">(WWC)</span></span>`}
       </div>
 
       <!-- Centered Title Block -->
-      <div style="max-width: 700px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+      <div style="max-width: 720px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; justify-content: center;">
         <div style="font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.18em; color: #b8860b; margin-bottom: 12px;">
-          Alaska Batteries Campaign
+          Worldwide Cables Campaign
         </div>
 
         <h1 style="font-size: 38px; font-weight: 900; letter-spacing: -0.02em; color: #18181b; margin: 0 0 16px 0; text-transform: uppercase; line-height: 1.15; font-family: 'Inter', system-ui, sans-serif;">
-          Storyboard Presentation
+          ${chapter.id === 'art-talent' ? "Client's Concept Storyboards" : 'Storyboard Presentation'}
         </h1>
 
         <div style="width: 58px; height: 4px; background: #b8860b; border-radius: 9999px; margin-bottom: 24px;"></div>
 
         <!-- Concept Details Card -->
-        <div style="background: #f4f3f0; border: 1.5px solid #dcd8d0; border-radius: 18px; padding: 24px 42px; display: flex; flex-direction: column; gap: 12px; min-width: 360px; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
+        <div style="background: #f4f3f0; border: 1.5px solid #dcd8d0; border-radius: 18px; padding: 24px 42px; display: flex; flex-direction: column; gap: 12px; min-width: 380px; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
           <div style="font-size: 20px; font-weight: 800; color: #18181b; letter-spacing: -0.01em;">
             <span style="color: #b8860b; font-weight: 700; font-size: 15px; text-transform: uppercase; letter-spacing: 0.1em; display: inline-block; min-width: 90px;">Title:</span>
             ${titleVal}
@@ -744,16 +808,16 @@ export async function generateChapterPDF(
 
           <div style="font-size: 20px; font-weight: 800; color: #18181b; letter-spacing: -0.01em;">
             <span style="color: #b8860b; font-weight: 700; font-size: 15px; text-transform: uppercase; letter-spacing: 0.1em; display: inline-block; min-width: 90px;">Product:</span>
-            ${productVal.toUpperCase()}
+            ${productVal}
           </div>
         </div>
       </div>
 
       <!-- Bottom presentation metadata -->
       <div style="position: absolute; bottom: 32px; left: 48px; right: 48px; display: flex; justify-content: space-between; align-items: center; font-size: 11px; color: #71717a; border-top: 1px solid rgba(0,0,0,0.08); padding-top: 12px;">
-        <span>Prepared for: <strong style="color: #18181b;">Alaska Batteries</strong></span>
+        <span>Prepared for: <strong style="color: #18181b;">Worldwide Cables</strong></span>
         <span>Prepared by: <strong style="color: #18181b;">Aatif Rasheed</strong> (Nasharz Films)</span>
-        <span>Total Storyboard Sheets: <strong style="color: #b8860b;">${chapter.galleryImages.length}</strong></span>
+        <span>Total Storyboard Sheets: <strong style="color: #b8860b;">${allSbImages.length}</strong></span>
       </div>
     `;
     sandbox.appendChild(titlePageEl);
@@ -764,18 +828,75 @@ export async function generateChapterPDF(
     });
 
     // -------------------------------------------------------------
-    // 2. STORYBOARD ORIGINAL SHEETS (Pure images, no headers/footers)
+    // 2. CONCEPT DIVIDER BREAKS + STORYBOARD ORIGINAL SHEETS
     // -------------------------------------------------------------
-    for (let gIdx = 0; gIdx < chapter.galleryImages.length; gIdx++) {
-      const img = chapter.galleryImages[gIdx];
-      const imgData = gIdx === 0 && firstImgData.dataUrl ? firstImgData : await loadBase64Image(img.url);
+    for (let secIdx = 0; secIdx < sbSections.length; secIdx++) {
+      const section = sbSections[secIdx];
+      if (!section.images || section.images.length === 0) continue;
+
+      // Section Break Divider Page with Bold Reverse White-on-Black Strip
+      const dividerPageEl = document.createElement('div');
+      dividerPageEl.style.width = `${baseW}px`;
+      dividerPageEl.style.height = `${baseH}px`;
+      dividerPageEl.style.boxSizing = 'border-box';
+      dividerPageEl.style.backgroundColor = '#ffffff';
+      dividerPageEl.style.display = 'flex';
+      dividerPageEl.style.flexDirection = 'column';
+      dividerPageEl.style.justifyContent = 'center';
+      dividerPageEl.style.alignItems = 'center';
+      dividerPageEl.style.padding = '48px';
+      dividerPageEl.style.position = 'relative';
+
+      dividerPageEl.innerHTML = `
+        <div style="position: absolute; top: 36px; left: 48px; right: 48px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #e2e8f0; padding-bottom: 12px;">
+          <span style="font-size: 11px; font-weight: 800; letter-spacing: 0.1em; color: #0f172a; text-transform: uppercase;">Nasharz Films • Storyboard Section Break</span>
+          <span style="font-size: 11px; font-weight: 800; letter-spacing: 0.08em; color: #b8860b; text-transform: uppercase;">WORLDWIDE CABLES (WWC)</span>
+        </div>
+
+        <div style="width: 100%; background-color: #000000; border-left: 10px solid #c69a53; padding: 38px 46px; box-sizing: border-box; display: flex; justify-content: space-between; align-items: center; border-radius: 10px;">
+          <div>
+            <div style="font-size: 13px; font-weight: 800; letter-spacing: 0.24em; text-transform: uppercase; color: #c69a53; margin-bottom: 8px;">
+              ${section.subtitle}
+            </div>
+            <div style="font-size: 46px; font-weight: 900; letter-spacing: 0.06em; text-transform: uppercase; color: #ffffff; line-height: 1.05; font-family: 'Inter', system-ui, sans-serif;">
+              ${section.label}
+            </div>
+          </div>
+          <div style="text-align: right;">
+            <div style="background: #18181b; border: 1.5px solid #c69a53; color: #ffffff; padding: 10px 22px; border-radius: 9999px; font-size: 14px; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase;">
+              ${section.images.length} Slides
+            </div>
+          </div>
+        </div>
+
+        <div style="position: absolute; bottom: 32px; left: 48px; right: 48px; display: flex; justify-content: space-between; align-items: center; font-size: 10px; color: #64748b; border-top: 1px solid #e2e8f0; padding-top: 10px; text-transform: uppercase; letter-spacing: 0.08em;">
+          <span>Worldwide Cables 2026 Campaign</span>
+          <span>${section.label} — Slides 01 to ${String(section.images.length).padStart(2, '0')}</span>
+        </div>
+      `;
+      sandbox.appendChild(dividerPageEl);
       sbPages.push({
-        type: 'image',
-        title: img.title || `Sheet ${gIdx + 1}`,
-        dataUrl: imgData.dataUrl,
-        aspect: imgData.aspect,
-        orientation: imgData.aspect >= 1.0 ? 'landscape' : 'portrait'
+        type: 'divider',
+        domElement: dividerPageEl,
+        orientation: isLandscape ? 'landscape' : 'portrait'
       });
+
+      for (let gIdx = 0; gIdx < section.images.length; gIdx++) {
+        const img = section.images[gIdx];
+        const imgData =
+          secIdx === 0 && gIdx === 0 && firstImgData.dataUrl
+            ? firstImgData
+            : await loadBase64Image(img.url);
+        sbPages.push({
+          type: 'image',
+          title: img.title || `Slide ${gIdx + 1}`,
+          sectionLabel: section.label,
+          slideLabel: `SLIDE ${String(gIdx + 1).padStart(2, '0')} OF ${String(section.images.length).padStart(2, '0')}`,
+          dataUrl: imgData.dataUrl,
+          aspect: imgData.aspect,
+          orientation: imgData.aspect >= 1.0 ? 'landscape' : 'portrait'
+        });
+      }
     }
 
     // -------------------------------------------------------------
@@ -805,7 +926,7 @@ export async function generateChapterPDF(
             <div style="font-size: 9px; color: #71717a; font-weight: 500;">Executive Production & Campaign Summary</div>
           </div>
         </div>
-        <img src="${branding.alaskaLogo}" style="height: 34px; width: auto; object-fit: contain;" alt="Alaska" />
+        ${branding.clientLogo ? `<img src="${branding.clientLogo}" style="height: 34px; width: auto; object-fit: contain;" alt="Worldwide Cables" />` : `<span style="font-size: 13px; font-weight: 800; letter-spacing: 0.08em; color: #0f172a; text-transform: uppercase;">WORLDWIDE CABLES <span style="color: #c69a53;">(WWC)</span></span>`}
       </div>
 
       <!-- Main Summary & Key Deliverables -->
@@ -851,8 +972,8 @@ export async function generateChapterPDF(
           <div style="font-size: 10.5px; font-weight: 700; color: #b8860b; margin-top: 3px;">
             Prepared By: <span style="color: #18181b;">Aatif Rasheed</span> • Producer / Director
           </div>
-          <div style="font-size: 9.5px; color: #475569; margin-top: 2px;">Produced by Nasharz Films for Alaska Batteries</div>
-          <div style="font-size: 8.5px; color: #64748b; margin-top: 2px;">Proprietary campaign strategy prepared strictly for Alaska Batteries executive review.</div>
+          <div style="font-size: 9.5px; color: #475569; margin-top: 2px;">Produced by Nasharz Films for Worldwide Cables</div>
+          <div style="font-size: 8.5px; color: #64748b; margin-top: 2px;">Proprietary campaign strategy prepared strictly for Worldwide Cables executive review.</div>
         </div>
         <div style="text-align: right; display: flex; flex-direction: column; align-items: flex-end; justify-content: center;">
           <div style="font-size: 8.5px; text-transform: uppercase; letter-spacing: 0.08em; color: #b8860b; font-weight: 700; margin-bottom: 3px;">Executive Authorization</div>
@@ -899,7 +1020,7 @@ export async function generateChapterPDF(
           pdf.addPage('a4', p.orientation || defaultOrientation);
         }
 
-        if (p.type === 'title' || p.type === 'end') {
+        if (p.type === 'title' || p.type === 'divider' || p.type === 'end') {
           if (p.domElement) {
             const canvas = await html2canvas(p.domElement, {
               scale: 1.5,
@@ -911,36 +1032,59 @@ export async function generateChapterPDF(
             pdf.addImage(imgData, 'JPEG', 0, 0, pageW, pageH);
           }
         } else if (p.type === 'image') {
-          // Always set clean white background for storyboard canvas
+          // Clean white background + bold reverse black strip header at top
           pdf.setFillColor(255, 255, 255);
           pdf.rect(0, 0, pageW, pageH, 'F');
 
+          const stripH = 11;
+          pdf.setFillColor(0, 0, 0);
+          pdf.rect(0, 0, pageW, stripH, 'F');
+          pdf.setFillColor(198, 154, 83);
+          pdf.rect(0, 0, 3, stripH, 'F');
+
+          pdf.setTextColor(255, 255, 255);
+          pdf.setFont('helvetica', 'bold');
+          pdf.setFontSize(11);
+          pdf.text(p.sectionLabel || 'CONCEPT 1', 7, 7.2);
+
+          pdf.setFont('helvetica', 'normal');
+          pdf.setFontSize(8.5);
+          pdf.setTextColor(212, 212, 216);
+          pdf.text(`${p.slideLabel || ''}   |   WORLDWIDE CABLES`, pageW - 7, 7.0, { align: 'right' });
+
           if (p.dataUrl) {
-            const pageAspect = pageW / pageH;
+            const availW = pageW - 6;
+            const availH = pageH - stripH - 6;
+            const pageAspect = availW / availH;
             const imgAspect = p.aspect || 1.0;
-            let drawW = pageW;
-            let drawH = pageH;
-            let offsetX = 0;
-            let offsetY = 0;
+            let drawW = availW;
+            let drawH = availH;
 
             if (imgAspect > pageAspect) {
-              drawW = pageW;
-              drawH = pageW / imgAspect;
-              offsetY = (pageH - drawH) / 2;
+              drawW = availW;
+              drawH = availW / imgAspect;
             } else {
-              drawH = pageH;
-              drawW = pageH * imgAspect;
-              offsetX = (pageW - drawW) / 2;
+              drawH = availH;
+              drawW = availH * imgAspect;
             }
 
+            const offsetX = (pageW - drawW) / 2;
+            const offsetY = stripH + 3 + (availH - drawH) / 2;
             pdf.addImage(p.dataUrl, 'JPEG', offsetX, offsetY, drawW, drawH);
           }
         }
       }
 
-      const filename = options?.customFileName || `Nasharz_Alaska_Storyboard_${titleVal.replace(/[^a-zA-Z0-9]/g, '_')}.pdf`;
+      const isClientConcept = chapter.id === 'art-talent';
+      const filename =
+        options?.customFileName ||
+        `Nasharz_WWC_${isClientConcept ? 'Clients_Concept' : 'Storyboard'}_${titleVal.replace(/[^a-zA-Z0-9]+/g, '_')}.pdf`;
       if (options?.returnBlob) {
-        return { blob: pdf.output('blob'), filename, folder: `Chapter_${chapter.number || '04'}_Storyboards` };
+        return {
+          blob: pdf.output('blob'),
+          filename,
+          folder: isClientConcept ? 'Chapter_07_Clients_Concept' : `Chapter_${chapter.number || '06'}_Storyboards`
+        };
       } else {
         pdf.save(filename);
         return;
@@ -1340,19 +1484,19 @@ export async function generateChapterPDF(
             badge: 'Master Livery Option 1',
             url: 'https://res.cloudinary.com/dawlj9ne4/image/upload/Battery_Pehlwan_Branded_Veh_op1_esdu3i.png',
             mainVehicle: [
-              'Aerodynamic high-roof commercial vehicle with custom yellow-and-white Alaska livery',
+              'Aerodynamic high-roof commercial vehicle with custom yellow-and-white WWC livery',
               'Roof-mounted high-intensity strobe beacon array and technical diagnostic antennas',
               'Full front 3/4 view, side profile, rear deployable ramp, and slide-out diagnostic racks',
-              'Holds Alaska Graphite batteries, high-voltage oscilloscopes, and LED status meters'
+              'Holds WWC Graphite batteries, high-voltage oscilloscopes, and LED status meters'
             ],
             vehicleLook: [
               'Pristine, futuristic yet practical Pakistani emergency-response mobile laboratory',
-              'High-gloss Alaska Yellow (#F59E0B) and Arctic White dual-tone body styling',
-              'Prominent Alaska Batteries branding and "BATTERY PEHLWAN EMERGENCY UNIT" insignia',
+              'High-gloss WWC Yellow (#F59E0B) and Arctic White dual-tone body styling',
+              'Prominent Worldwide Cables branding and "BATTERY PEHLWAN EMERGENCY UNIT" insignia',
               'Sharp professional finish creating comedic contrast against real-world breakdown environments'
             ],
             props: [
-              'Hero Alaska Graphite Battery with 1:1 cutaway casing & 9-Month Replacement Warranty seal',
+              'Hero WWC Graphite Battery with 1:1 cutaway casing & 9-Month Replacement Warranty seal',
               'High-speed digital oscilloscope and diagnostic telemetry tablet',
               'Heavy-duty insulated jumper clamps and spark-arrestor cables',
               'Brushed aluminum mobile diagnostic flight cases and emergency LED work-lights'
@@ -1366,13 +1510,13 @@ export async function generateChapterPDF(
             url: 'https://res.cloudinary.com/dawlj9ne4/image/upload/Battery_Pehlwan_Branded_Veh_jog7cv.png',
             mainVehicle: [
               'Sport-aero commercial high-roof van configuration with extended rear cargo bay',
-              'Full side-profile livery featuring dynamic speed-chevron Alaska brand graphics',
+              'Full side-profile livery featuring dynamic speed-chevron WWC brand graphics',
               'Rapid-access side gullwing doors exposing high-speed battery replacement charging bay',
               'Equipped with quick-crank mobile booster packs and graphite plate telemetry screens'
             ],
             vehicleLook: [
-              'Dynamic high-contrast Alaska Solar Gold & Ultra-Gloss Black accent scheme',
-              'Bold typographic Alaska logo across flank with reflective safety micro-prisms',
+              'Dynamic high-contrast WWC Solar Gold & Ultra-Gloss Black accent scheme',
+              'Bold typographic WWC logo across flank with reflective safety micro-prisms',
               'Matte graphite alloy wheels with all-terrain emergency response tires',
               'Crisp aerodynamic presence calibrated for rapid highway & city interventions'
             ],
@@ -1380,7 +1524,7 @@ export async function generateChapterPDF(
               'Ultra-fast rapid-charge diagnostic dock with dual 12V/24V outputs',
               'Titanium-finish battery carrier handles and magnetic terminal alignment probes',
               'Wireless Bluetooth battery health analysis wand connected to mobile tablet',
-              'Emergency roadside traffic warning beacon pillars and Alaska floor mats'
+              'Emergency roadside traffic warning beacon pillars and WWC floor mats'
             ],
             rule: 'AERO LIVERY OPTION 2: Sleeker, motorsport-inspired rapid response aesthetic for high-speed urban transit commercial sequences.'
           },
@@ -1397,7 +1541,7 @@ export async function generateChapterPDF(
             ],
             vehicleLook: [
               'Industrial-grade high-durability finish with high-visibility reflective hazard striping',
-              'Solid Arctic White base with bold Alaska Gold power-wave accents along the wheelbase',
+              'Solid Arctic White base with bold WWC Gold power-wave accents along the wheelbase',
               'Textured non-slip aluminum side-steps and heavy-duty roof rack for extra spare cells',
               'Maximum authority and rugged reliability for tough rural and industrial deployments'
             ],
@@ -1405,7 +1549,7 @@ export async function generateChapterPDF(
               'Heavy-duty industrial carbon-pile battery load tester and digital impedance analyzer',
               'Heavy tractor & truck commercial battery lifting harness and safety clamps',
               'Protective technician utility gloves, safety glasses, and heavy torque wrenches',
-              'Portable high-output emergency floodlight tripod with Alaska branding'
+              'Portable high-output emergency floodlight tripod with WWC branding'
             ],
             rule: 'HEAVY UTILITY OPTION 3: Maximum rugged durability and high-capacity rescue capability suited for agricultural and commercial freight breakdown scenarios.'
           }
@@ -1590,7 +1734,7 @@ export async function generateChapterPDF(
           'Active dock workers carrying seafood trays and heavy cargo blocks',
           'Refrigerated seafood transport truck with dead battery alongside charpai tea setup'
         ],
-        visualGoal: 'High contrast between traditional fishing port and massive Alaska mobile laboratory truck creates instant comedy.'
+        visualGoal: 'High contrast between traditional fishing port and massive WWC mobile laboratory truck creates instant comedy.'
       },
       {
         sheetNum: 'Loc 03',
@@ -1641,7 +1785,7 @@ export async function generateChapterPDF(
           'Thousands of decorative fairy lights & vibrant marigold floral garlands (Haar)',
           'Central heavy-duty UPS / Inverter setup connected to main residential power board'
         ],
-        visualGoal: 'Total blackout freezes household in comic mid-action shock; Alaska battery instantly restores radiant illumination.'
+        visualGoal: 'Total blackout freezes household in comic mid-action shock; WWC battery instantly restores radiant illumination.'
       },
       {
         sheetNum: 'Loc 06',
@@ -1655,7 +1799,7 @@ export async function generateChapterPDF(
         productionDesign: [
           'High-precision studio soundstage setup with acoustic sound-proofing & matte black seamless cyclorama',
           'Controlled high-speed phantom flex camera motion rig for ultra-slow motion macro sparking',
-          '1:1 acrylic cross-section hero cutaway battery showcasing Alaska internal graphite plate lattice',
+          '1:1 acrylic cross-section hero cutaway battery showcasing WWC internal graphite plate lattice',
           'High-voltage diagnostic oscilloscope workbenches, spark arrestor cables, and digital LED voltmeters'
         ],
         visualGoal: 'Hyper-stylized, razor-sharp technical diagnostic world showcasing internal graphite engineering, instant cranking power, and 9-Month Replacement Warranty.'
@@ -2300,7 +2444,7 @@ export async function generateChapterPDF(
           <div style="font-size: 8px; line-height: 1.35; color: #334155;">
             <strong>Artist Name:</strong> Mr. Iftikhar Ahmad Sheikh (p/k/a Iftikhar Thakur)<br/>
             <strong>Campaign Role:</strong> Brand Ambassador & Character Variants<br/>
-            <strong>Exclusivity:</strong> Exclusive to Alaska Batteries across all battery categories for Pakistan & GCC territories.
+            <strong>Exclusivity:</strong> Exclusive to Worldwide Cables across all battery categories for Pakistan & GCC territories.
           </div>
         </div>
         <div style="background-color: #faf8f5; border: 1px solid #f1ece4; border-radius: 4px; padding: 6px 8px;">
@@ -2331,7 +2475,7 @@ export async function generateChapterPDF(
         <div style="font-size: 9.5px; font-weight: 700; color: #b8860b; margin-top: 2px;">
           Prepared By: <span style="color: #0f172a;">Aatif Rasheed</span> • Producer / Director • Nasharz Films
         </div>
-        <div style="font-size: 8px; color: #64748b; margin-top: 2px;">Proprietary production lookbook, locations dossier, and talent agreement prepared strictly for Alaska Batteries.</div>
+        <div style="font-size: 8px; color: #64748b; margin-top: 2px;">Proprietary production lookbook, locations dossier, and talent agreement prepared strictly for Worldwide Cables.</div>
       </div>
       <div style="text-align: right; display: flex; flex-direction: column; align-items: flex-end; justify-content: center;">
         <div style="font-size: 7.5px; text-transform: uppercase; letter-spacing: 0.08em; color: #b8860b; font-weight: 800; margin-bottom: 2px;">Executive Authorization & Seal</div>
@@ -2347,7 +2491,7 @@ export async function generateChapterPDF(
     pages.forEach((p, idx) => {
       p.footerArea.innerHTML = `
         <span>Nasharz Films • Confidential</span>
-        <span>Alaska Batteries 2026 Campaign • Art & Talent Lookbook</span>
+        <span>Worldwide Cables 2026 Campaign • Client's Concept</span>
         <span style="font-weight: 700; color: #b8860b;">Page ${idx + 1} of ${totalPages}</span>
       `;
     });
@@ -2370,7 +2514,7 @@ export async function generateChapterPDF(
         pdf.addImage(canvas.toDataURL('image/jpeg', 0.92), 'JPEG', 0, 0, 210, 297);
       }
 
-      const filename = options?.customFileName || `Nasharz_Alaska_Chapter07_Art_and_Talent.pdf`;
+      const filename = options?.customFileName || `Nasharz_WWC_Chapter07_Art_and_Talent.pdf`;
       if (options?.returnBlob) {
         return { blob: pdf.output('blob'), filename, folder: 'Chapter_07_Art_and_Talent' };
       } else {
@@ -2569,8 +2713,8 @@ export async function generateChapterPDF(
         <div style="font-size: 11px; font-weight: 700; color: #b8860b; margin-top: 3px;">
           Prepared By: <span style="color: #0f172a;">Aatif Rasheed</span> • Producer / Director • Nasharz Films
         </div>
-        <div style="font-size: 10px; color: #475569; margin-top: 2px;">Produced by Nasharz Films for Alaska Batteries</div>
-        <div style="font-size: 9px; color: #64748b; margin-top: 2px;">Proprietary campaign strategy prepared strictly for Alaska Batteries executive review.</div>
+        <div style="font-size: 10px; color: #475569; margin-top: 2px;">Produced by Nasharz Films for Worldwide Cables</div>
+        <div style="font-size: 9px; color: #64748b; margin-top: 2px;">Proprietary campaign strategy prepared strictly for Worldwide Cables executive review.</div>
       </div>
       <div style="text-align: right; display: flex; flex-direction: column; align-items: flex-end; justify-content: center;">
         <div style="font-size: 9px; text-transform: uppercase; letter-spacing: 0.08em; color: #b8860b; font-weight: 700; margin-bottom: 3px;">Executive Authorization</div>
@@ -2593,7 +2737,7 @@ export async function generateChapterPDF(
   pages.forEach((p, idx) => {
     p.footerArea.innerHTML = `
       <span>Nasharz Films • Confidential</span>
-      <span>Alaska Batteries 2026 Campaign</span>
+      <span>Worldwide Cables 2026 Campaign</span>
       <span style="font-weight: 700; color: #b8860b;">Page ${idx + 1} of ${totalPages}</span>
     `;
   });
@@ -2629,7 +2773,7 @@ export async function generateChapterPDF(
       pdf.addImage(imgData, 'JPEG', 0, 0, 210, 297);
     }
 
-    const filename = options?.customFileName || `Nasharz_Alaska_Batteries_Chapter_${chapter.number}_${chapter.id}.pdf`;
+    const filename = options?.customFileName || `Nasharz_WWC_Chapter_${chapter.number}_${chapter.id}.pdf`;
     if (options?.returnBlob) {
       return { blob: pdf.output('blob'), filename, folder: `Chapter_${chapter.number}_${chapter.id}` };
     } else {
@@ -2673,7 +2817,7 @@ export async function generateEstimatePDF(
 
   const whtRate = options?.whtRate !== undefined ? options.whtRate : 0;
   const srbRate = options?.srbRate !== undefined ? options.srbRate : 0;
-  const clientAddr = options?.clientAddress || 'Alaska Battery. 7th Floor, B-3 Tower, Jinnah Avenue, New Blue Area, Islamabad';
+  const clientAddr = options?.clientAddress || 'Worldwide Cables. 92 BWA, Broadway Commercial Phase 8, DHA Lahore, Punjab - Pakistan. | +92 334 666 0452 | info@worldwidecables.com.pk | www.worldwidecables.com.pk';
   const clientNTN = options?.clientNTN || '';
   const estimateNo = options?.estimateNumber || 'NCW/EST/555/2026';
 
@@ -2789,7 +2933,7 @@ export async function generateEstimatePDF(
       : `
         <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #e2e8f0; padding-bottom: 6px; margin-bottom: 10px; font-size: 8px; color: #64748b;">
           <span>${dateStr} • ${estimateNo}</span>
-          <span style="font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: #0f172a;">ESTIMATE — Alaska Battery Campaign</span>
+          <span style="font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: #0f172a;">ESTIMATE — Worldwide Cables Campaign</span>
         </div>
       `;
 
@@ -2801,7 +2945,7 @@ export async function generateEstimatePDF(
 
       <div style="border-top: 1px solid #f1f5f9; padding-top: 6px; display: flex; justify-content: space-between; align-items: center; font-size: 8px; color: #94a3b8;">
         <span>Nasharz Films • Confidential</span>
-        <span>Alaska Batteries Campaign Estimate</span>
+        <span>Worldwide Cables Campaign Estimate</span>
         <span style="font-weight: 600; color: #0f172a;">Page ${pageNum} of ${TOTAL_PAGES}</span>
       </div>
     `;

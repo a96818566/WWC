@@ -351,7 +351,7 @@ export const ArtTalentChapterView: React.FC<ArtTalentChapterViewProps> = ({
       ],
       headRule: 'Practical cotton patkas or bareheaded harbor workwear.',
       performance: 'Hardworking, bustling dock workers racing against melting ice and spoiling cargo.',
-      visualRule: 'Industrial maritime texture balancing high-tech Alaska mobile laboratory arrival.'
+      visualRule: 'Industrial maritime texture balancing high-tech WWC mobile laboratory arrival.'
     },
 
     // -------------------------------------------------------------
@@ -419,7 +419,7 @@ export const ArtTalentChapterView: React.FC<ArtTalentChapterViewProps> = ({
         sceneTitle: 'Film 03 Tractor • Harvester Field Gathering',
         shotTag: 'Tractor SB Scene 01 • Frame 04',
         url: 'https://lh3.googleusercontent.com/d/1NTtmKqHWwF6ZCNw_9LuLxjRLFVkDt0uJ',
-        sceneContext: 'Field harvesters gather around tractor engine bay before celebration when Alaska restarts the engine.'
+        sceneContext: 'Field harvesters gather around tractor engine bay before celebration when WWC restarts the engine.'
       },
       wardrobePoints: [
         'Earthy Khaki/Olive breathable cotton kurta',
@@ -556,19 +556,19 @@ export const ArtTalentChapterView: React.FC<ArtTalentChapterViewProps> = ({
         sceneContext: 'Battery Pehlwan branded high-roof van arrives on location with roof beacon flashing and deployable diagnostic racks.'
       },
       mainVehicle: [
-        'Aerodynamic high-roof commercial vehicle with custom yellow-and-white Alaska livery',
+        'Aerodynamic high-roof commercial vehicle with custom yellow-and-white WWC livery',
         'Roof-mounted high-intensity strobe beacon array and technical diagnostic antennas',
         'Full front 3/4 view, side profile, rear deployable ramp, and slide-out diagnostic racks',
-        'Holds Alaska Graphite batteries, high-voltage oscilloscopes, and LED status meters'
+        'Holds WWC Graphite batteries, high-voltage oscilloscopes, and LED status meters'
       ],
       vehicleLook: [
         'Pristine, futuristic yet practical Pakistani emergency-response mobile laboratory',
-        'High-gloss Alaska Yellow (#F59E0B) and Arctic White dual-tone body styling',
-        'Prominent Alaska Batteries branding and "BATTERY PEHLWAN EMERGENCY UNIT" insignia',
+        'High-gloss WWC Yellow (#F59E0B) and Arctic White dual-tone body styling',
+        'Prominent Worldwide Cables branding and "BATTERY PEHLWAN EMERGENCY UNIT" insignia',
         'Sharp professional finish creating comedic contrast against real-world breakdown environments'
       ],
       props: [
-        'Hero Alaska Graphite Battery with 1:1 cutaway casing & 9-Month Replacement Warranty seal',
+        'Hero WWC Graphite Battery with 1:1 cutaway casing & 9-Month Replacement Warranty seal',
         'High-speed digital oscilloscope and diagnostic telemetry tablet',
         'Heavy-duty insulated jumper clamps and spark-arrestor cables',
         'Brushed aluminum mobile diagnostic flight cases and emergency LED work-lights'
@@ -580,7 +580,7 @@ export const ArtTalentChapterView: React.FC<ArtTalentChapterViewProps> = ({
       filmKey: 'master',
       filmLabel: 'Master Vehicle • Option 2',
       title: 'Unified Battery Pehlwan Mobile Lab Van (Option 2 — Aero Graphic Livery)',
-      subtitle: 'Streamlined commercial response van with sport aero Alaska side graphics',
+      subtitle: 'Streamlined commercial response van with sport aero WWC side graphics',
       url: 'https://res.cloudinary.com/dawlj9ne4/image/upload/Battery_Pehlwan_Branded_Veh_jog7cv.png',
       altOptionUrl: 'https://res.cloudinary.com/dawlj9ne4/image/upload/Battery_Pehlwan_Branded_Veh_op3_g0tgpa.png',
       badge: 'Aero Livery Option 2',
@@ -592,13 +592,13 @@ export const ArtTalentChapterView: React.FC<ArtTalentChapterViewProps> = ({
       },
       mainVehicle: [
         'Sport-aero commercial high-roof van configuration with extended rear cargo bay',
-        'Full side-profile livery featuring dynamic speed-chevron Alaska brand graphics',
+        'Full side-profile livery featuring dynamic speed-chevron WWC brand graphics',
         'Rapid-access side gullwing doors exposing high-speed battery replacement charging bay',
         'Equipped with quick-crank mobile booster packs and graphite plate telemetry screens'
       ],
       vehicleLook: [
-        'Dynamic high-contrast Alaska Solar Gold & Ultra-Gloss Black accent scheme',
-        'Bold typographic Alaska logo across flank with reflective safety micro-prisms',
+        'Dynamic high-contrast WWC Solar Gold & Ultra-Gloss Black accent scheme',
+        'Bold typographic WWC logo across flank with reflective safety micro-prisms',
         'Matte graphite alloy wheels with all-terrain emergency response tires',
         'Crisp aerodynamic presence calibrated for rapid highway & city interventions'
       ],
@@ -606,7 +606,7 @@ export const ArtTalentChapterView: React.FC<ArtTalentChapterViewProps> = ({
         'Ultra-fast rapid-charge diagnostic dock with dual 12V/24V outputs',
         'Titanium-finish battery carrier handles and magnetic terminal alignment probes',
         'Wireless Bluetooth battery health analysis wand connected to mobile tablet',
-        'Emergency roadside traffic warning beacon pillars and Alaska floor mats'
+        'Emergency roadside traffic warning beacon pillars and WWC floor mats'
       ],
       artDirective: 'AERO LIVERY OPTION 2: Sleeker, motorsport-inspired rapid response aesthetic for high-speed urban transit commercial sequences.'
     },
@@ -633,7 +633,7 @@ export const ArtTalentChapterView: React.FC<ArtTalentChapterViewProps> = ({
       ],
       vehicleLook: [
         'Industrial-grade high-durability finish with high-visibility reflective hazard striping',
-        'Solid Arctic White base with bold Alaska Gold power-wave accents along the wheelbase',
+        'Solid Arctic White base with bold WWC Gold power-wave accents along the wheelbase',
         'Textured non-slip aluminum side-steps and heavy-duty roof rack for extra spare cells',
         'Maximum authority and rugged reliability for tough rural and industrial deployments'
       ],
@@ -641,7 +641,7 @@ export const ArtTalentChapterView: React.FC<ArtTalentChapterViewProps> = ({
         'Heavy-duty industrial carbon-pile battery load tester and digital impedance analyzer',
         'Heavy tractor & truck commercial battery lifting harness and safety clamps',
         'Protective technician utility gloves, safety glasses, and heavy torque wrenches',
-        'Portable high-output emergency floodlight tripod with Alaska branding'
+        'Portable high-output emergency floodlight tripod with WWC branding'
       ],
       artDirective: 'HEAVY UTILITY OPTION 3: Maximum rugged durability and high-capacity rescue capability suited for agricultural and commercial freight breakdown scenarios.'
     },
@@ -856,7 +856,7 @@ export const ArtTalentChapterView: React.FC<ArtTalentChapterViewProps> = ({
         'Small roadside charpai & authentic roadside tea/chai setup'
       ],
       visualGoal: 'The contrast between traditional fishing port and massive mobile battery laboratory should create immediate visual comedy.',
-      keyVisual: 'Iftikhar Thakur casually drinking hot chai on a wooden charpai near the fishing boats while the truck seafood crisis develops, until the large Alaska mobile laboratory truck enters the harbor.',
+      keyVisual: 'Iftikhar Thakur casually drinking hot chai on a wooden charpai near the fishing boats while the truck seafood crisis develops, until the large WWC mobile laboratory truck enters the harbor.',
       refImage: 'https://res.cloudinary.com/dawlj9ne4/image/upload/Truck_location_en8hv0.png',
       icon: Anchor,
     },
@@ -878,12 +878,12 @@ export const ArtTalentChapterView: React.FC<ArtTalentChapterViewProps> = ({
       productionDesign: [
         'Large open agricultural space with long panoramic horizon line',
         'Working agricultural tractor access with soil furrows',
-        'Designated maneuvering space for the Alaska laboratory caravan',
+        'Designated maneuvering space for the WWC laboratory caravan',
         'Clear, defined pathway for dynamic Baraat procession movement & Dhol players',
         'Expansive open field for dynamic crane/drone final wide shot'
       ],
       visualGoal: 'The baraat must be visible in the distance before becoming part of the comedy. The field should allow: Baraat far away -> Baraat approaching -> Baraat becomes chorus -> Baraat disappears in the opposite direction.',
-      keyVisual: 'The red tractor breakdown stops the lively Punjabi wedding Baraat in the middle of golden fields, turning the procession into a celebratory musical chorus when Alaska Battery Expert arrives.',
+      keyVisual: 'The red tractor breakdown stops the lively Punjabi wedding Baraat in the middle of golden fields, turning the procession into a celebratory musical chorus when Worldwide Cables Expert arrives.',
       refImage: 'https://res.cloudinary.com/dawlj9ne4/image/upload/Tractor_seq_1_kqpwwa.png',
       icon: Tractor,
     },
@@ -910,7 +910,7 @@ export const ArtTalentChapterView: React.FC<ArtTalentChapterViewProps> = ({
         'Visible commercial environment with high-end glass storefronts'
       ],
       visualGoal: 'The clean, modern commercial location makes the absurd arrival of the Battery Expert and his mobile pit-crew all the more visually entertaining and impactful.',
-      keyVisual: 'A suited young candidate is anxiously pushing a stalled 125cc motorcycle while constantly checking his watch, when the high-tech Alaska response unit swarms in with lightning speed.',
+      keyVisual: 'A suited young candidate is anxiously pushing a stalled 125cc motorcycle while constantly checking his watch, when the high-tech WWC response unit swarms in with lightning speed.',
       refImage: 'https://res.cloudinary.com/dawlj9ne4/image/upload/Bike_Seq_Loc_qgltqe.png',
       icon: Building,
     },
@@ -937,8 +937,8 @@ export const ArtTalentChapterView: React.FC<ArtTalentChapterViewProps> = ({
         'Baraat family members bustling with festive wedding clothes, gifts, open luggage',
         'Central heavy-duty UPS / Inverter setup connected to home distribution board'
       ],
-      visualGoal: 'The entire house is buzzing and alive. Then: LIGHTS OUT. Everything instantly freezes in dead silence and comic shock. Alaska Battery Expert restores radiant illumination.',
-      keyVisual: 'Complete home blackout freezes Thakur and the wedding household in comical midway poses, until the Battery Expert powers up the Alaska Inverter Battery, exploding the house back into vibrant light.',
+      visualGoal: 'The entire house is buzzing and alive. Then: LIGHTS OUT. Everything instantly freezes in dead silence and comic shock. Worldwide Cables Expert restores radiant illumination.',
+      keyVisual: 'Complete home blackout freezes Thakur and the wedding household in comical midway poses, until the Battery Expert powers up the WWC Inverter Battery, exploding the house back into vibrant light.',
       refImage: 'https://res.cloudinary.com/dawlj9ne4/image/upload/UPS_Location_ldzp72.png',
       icon: Home,
     },
@@ -960,11 +960,11 @@ export const ArtTalentChapterView: React.FC<ArtTalentChapterViewProps> = ({
       productionDesign: [
         'Precision soundproof studio stage with motorized overhead lighting grid',
         'High-speed Phantom Flex 4K camera rig for 1000 FPS macro liquid & spark shots',
-        'Specialized 1:1 scale Alaska graphite battery internal cutaway stage',
+        'Specialized 1:1 scale WWC graphite battery internal cutaway stage',
         'Cryogenic cold-steam injectors simulating super-cooling graphite technology',
         'High-voltage diagnostic oscilloscope benches and digital LED voltmeters'
       ],
-      visualGoal: 'Hyper-stylized, razor-sharp technical diagnostic world showcasing the internal graphite engineering, instant cranking power, and 9-Month Replacement Warranty of Alaska Batteries.',
+      visualGoal: 'Hyper-stylized, razor-sharp technical diagnostic world showcasing the internal graphite engineering, instant cranking power, and 9-Month Replacement Warranty of Worldwide Cables.',
       keyVisual: 'Super slow-motion macro reveal of internal graphite plates and controlled pyrotechnic spark ignition upon terminal connection.',
       refImage: 'https://res.cloudinary.com/dawlj9ne4/image/upload/Studio_Seq_gsrnsm.png',
       icon: Camera,
@@ -989,7 +989,7 @@ export const ArtTalentChapterView: React.FC<ArtTalentChapterViewProps> = ({
                 Chapter 07
               </span>
               <h2 className="text-base sm:text-lg font-black text-white tracking-tight">
-                Art & Talent
+                Client's Concept
               </h2>
             </div>
             <p className="text-[11px] text-zinc-400 mt-0.5">
@@ -1175,7 +1175,7 @@ export const ArtTalentChapterView: React.FC<ArtTalentChapterViewProps> = ({
             <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
               <div>
                 <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-[#c69a53]">
-                  <Sparkles className="w-3.5 h-3.5" /> ALASKA BATTERIES • BATTERY EXPERT
+                  <Sparkles className="w-3.5 h-3.5" /> WORLDWIDE CABLES • BATTERY EXPERT
                 </div>
                 <h3 className="text-xl sm:text-2xl font-bold text-white font-heading mt-1">
                   Production Design Master Sheet & 10 Wardrobe Sheets
@@ -1515,7 +1515,7 @@ export const ArtTalentChapterView: React.FC<ArtTalentChapterViewProps> = ({
               <Sparkles className="w-4 h-4 text-amber-400 shrink-0 mt-0.5" />
               <div>
                 <strong className="text-amber-300">Unified Master Vehicle Architecture: </strong>
-                One consistent Alaska Battery Pehlwan Mobile Emergency Van is deployed across all 5 commercial films to establish immediate brand identity and high-tech credibility. Individual sequence vehicles (Sedan, Cargo Truck, Farm Tractor, Commuter Motorcycle, UPS Inverter) represent the distressed consumer setting.
+                One consistent Worldwide Cables Pehlwan Mobile Emergency Van is deployed across all 5 commercial films to establish immediate brand identity and high-tech credibility. Individual sequence vehicles (Sedan, Cargo Truck, Farm Tractor, Commuter Motorcycle, UPS Inverter) represent the distressed consumer setting.
               </div>
             </div>
           </div>
@@ -1998,7 +1998,7 @@ export const ArtTalentChapterView: React.FC<ArtTalentChapterViewProps> = ({
                     04. The Technical Response Unit
                   </span>
                   <h4 className="text-base font-bold text-white">
-                    The Alaska Battery Expert Team — Modern Battery Specialists
+                    The Worldwide Cables Expert Team — Modern Battery Specialists
                   </h4>
                 </div>
               </div>
@@ -2011,7 +2011,7 @@ export const ArtTalentChapterView: React.FC<ArtTalentChapterViewProps> = ({
                   <ul className="space-y-1 text-zinc-300">
                     <li>• Contemporary technical uniforms with clean silhouettes</li>
                     <li>• Practical jackets or utility-style clothing</li>
-                    <li>• Subtle Alaska branding on chest & sleeve</li>
+                    <li>• Subtle WWC branding on chest & sleeve</li>
                     <li>• Functional equipment belts & technical cases</li>
                   </ul>
                 </div>
@@ -2029,7 +2029,7 @@ export const ArtTalentChapterView: React.FC<ArtTalentChapterViewProps> = ({
         </div>
       )}
 
-      {/* 4. TAB CONTENT: PRODUCTION DESIGN LANGUAGE — ALASKA MOBILE LABORATORY & SETS */}
+      {/* 4. TAB CONTENT: PRODUCTION DESIGN LANGUAGE — WWC MOBILE LABORATORY & SETS */}
       {activeTab === 'mobile-labs' && (
         <div className="space-y-6 animate-fadeIn">
           
@@ -2039,7 +2039,7 @@ export const ArtTalentChapterView: React.FC<ArtTalentChapterViewProps> = ({
               <Truck className="w-3.5 h-3.5" /> Production Design Language
             </div>
             <h3 className="text-xl font-bold text-white font-heading">
-              Alaska Mobile Laboratory — Film-Specific Arrivals
+              WWC Mobile Laboratory — Film-Specific Arrivals
             </h3>
             <p className="text-xs text-zinc-300 max-w-2xl font-medium">
               Every Battery Expert arrival should be visually distinctive and location-specific. The arrival introduces a sudden, stylish, and high-tech spectacle that immediately elevates the scene.
@@ -2097,7 +2097,7 @@ export const ArtTalentChapterView: React.FC<ArtTalentChapterViewProps> = ({
                 <div className="bg-blue-50/60 p-3 rounded-xl border border-blue-200/70 space-y-1">
                   <span className="text-[10px] font-bold uppercase tracking-wider text-blue-900 block">Arrival Setup:</span>
                   <p className="text-xs font-bold text-zinc-900">
-                    Large Alaska-branded mobile laboratory truck.
+                    Large WWC-branded mobile laboratory truck.
                   </p>
                 </div>
                 <p className="text-xs text-zinc-600 leading-relaxed">
@@ -2122,7 +2122,7 @@ export const ArtTalentChapterView: React.FC<ArtTalentChapterViewProps> = ({
                 <div className="bg-emerald-50/60 p-3 rounded-xl border border-emerald-200/70 space-y-1">
                   <span className="text-[10px] font-bold uppercase tracking-wider text-emerald-900 block">Arrival Setup:</span>
                   <p className="text-xs font-bold text-zinc-900">
-                    Sophisticated Alaska-branded laboratory caravan towed by a tractor.
+                    Sophisticated WWC-branded laboratory caravan towed by a tractor.
                   </p>
                 </div>
                 <p className="text-xs text-zinc-600 leading-relaxed">
@@ -2229,7 +2229,7 @@ export const ArtTalentChapterView: React.FC<ArtTalentChapterViewProps> = ({
                 </div>
               </div>
 
-              {/* Card 2: The Hero Alaska Graphite Battery */}
+              {/* Card 2: The Hero WWC Graphite Battery */}
               <div className="bg-zinc-900 text-white p-6 rounded-2xl border border-zinc-800 space-y-4">
                 <div className="flex items-center gap-3">
                   <div className="p-2.5 bg-amber-500/20 text-[#c69a53] rounded-xl border border-amber-500/30">
@@ -2240,12 +2240,12 @@ export const ArtTalentChapterView: React.FC<ArtTalentChapterViewProps> = ({
                       Hero Product Prop
                     </span>
                     <h4 className="text-base font-bold text-white">
-                      The Alaska Graphite Master Battery Prop
+                      The WWC Graphite Master Battery Prop
                     </h4>
                   </div>
                 </div>
                 <p className="text-xs text-zinc-300 leading-relaxed">
-                  Precision 1:1 scale hero prop featuring high-gloss obsidian casing, gold-plated Alaska branding, glowing internal graphite cells with pulsating crimson fiber-optic lighting for macro camera closeups.
+                  Precision 1:1 scale hero prop featuring high-gloss obsidian casing, gold-plated WWC branding, glowing internal graphite cells with pulsating crimson fiber-optic lighting for macro camera closeups.
                 </p>
                 <div className="bg-zinc-800/80 p-3.5 rounded-xl border border-zinc-700 space-y-2 text-xs">
                   <div className="font-bold text-zinc-200">Visual Reveal Treatment:</div>
@@ -2357,11 +2357,11 @@ export const ArtTalentChapterView: React.FC<ArtTalentChapterViewProps> = ({
               07. Color Direction & 08. Main Production Priorities
             </h3>
             <p className="text-xs text-zinc-300 max-w-2xl font-medium">
-              The campaign should feel rich and cinematic. Grounded in authentic Pakistani realism, elevated with sudden technical spectacle, and framed by controlled Alaska yellow brand identity.
+              The campaign should feel rich and cinematic. Grounded in authentic Pakistani realism, elevated with sudden technical spectacle, and framed by controlled WWC yellow brand identity.
             </p>
           </div>
 
-          {/* Color Direction Breakdown (Base World vs Alaska Visual Identity) */}
+          {/* Color Direction Breakdown (Base World vs WWC Visual Identity) */}
           <div className="bg-white rounded-2xl border border-zinc-200 p-6 shadow-sm space-y-5">
             <div className="flex items-center justify-between border-b border-zinc-100 pb-3">
               <div className="flex items-center gap-2.5">
@@ -2409,22 +2409,22 @@ export const ArtTalentChapterView: React.FC<ArtTalentChapterViewProps> = ({
                 </ul>
               </div>
 
-              {/* Alaska Visual Identity */}
+              {/* WWC Visual Identity */}
               <div className="bg-gradient-to-br from-amber-500/10 via-amber-500/5 to-transparent p-5 rounded-xl border border-amber-300 space-y-3">
                 <div className="flex items-center justify-between">
                   <h5 className="text-sm font-bold text-amber-950 flex items-center gap-2">
                     <span className="w-2.5 h-2.5 rounded-full bg-amber-500"></span>
-                    Alaska Visual Identity
+                    WWC Visual Identity
                   </h5>
                   <span className="text-[10px] uppercase font-mono text-amber-800 font-bold">Brand Realm</span>
                 </div>
                 
                 <div className="p-3 bg-amber-500/15 rounded-lg border border-amber-400/40 text-xs text-amber-950 font-semibold">
-                  Use <strong>Alaska yellow</strong> as the strongest brand colour.
+                  Use <strong>WWC yellow</strong> as the strongest brand colour.
                 </div>
 
                 <div className="space-y-1.5 text-xs text-zinc-800">
-                  <span className="text-[11px] font-bold text-amber-900 block">The Alaska yellow should appear through:</span>
+                  <span className="text-[11px] font-bold text-amber-900 block">The WWC yellow should appear through:</span>
                   <div className="grid grid-cols-2 gap-1.5 pt-1">
                     <div className="bg-white p-2 rounded-lg border border-amber-200 flex items-center gap-1.5 font-medium text-[11px]">
                       <span className="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
@@ -2521,7 +2521,7 @@ export const ArtTalentChapterView: React.FC<ArtTalentChapterViewProps> = ({
                 </div>
                 <h5 className="text-sm font-bold text-white">Product Is Always Clear</h5>
                 <p className="text-xs text-zinc-300 leading-relaxed">
-                  The Alaska Battery must receive a strong premium hero reveal with obsidian casing, golden seals, and dynamic terminal ignition.
+                  The Worldwide Cables must receive a strong premium hero reveal with obsidian casing, golden seals, and dynamic terminal ignition.
                 </p>
               </div>
 
@@ -2571,7 +2571,7 @@ export const ArtTalentChapterView: React.FC<ArtTalentChapterViewProps> = ({
                 </div>
 
                 <div className="p-3.5 bg-black/60 rounded-lg border border-amber-500/30 text-xs font-bold text-amber-300 leading-relaxed">
-                  Pakistani realism + cinematic scale + Iftikhar Thakur comedy + premium Alaska technology.
+                  Pakistani realism + cinematic scale + Iftikhar Thakur comedy + premium WWC technology.
                 </div>
 
                 <p className="text-[11px] text-zinc-400">
@@ -2957,7 +2957,7 @@ export const ArtTalentChapterView: React.FC<ArtTalentChapterViewProps> = ({
                 </h3>
               </div>
               <p className="text-xs text-zinc-500 mt-1">
-                Official Modeling, Talent & Digital Likeness Agreement between Alaska Batteries, Iftikhar Thakur, and Nasharz Films.
+                Official Modeling, Talent & Digital Likeness Agreement between Worldwide Cables, Iftikhar Thakur, and Nasharz Films.
               </p>
             </div>
 

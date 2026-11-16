@@ -68,7 +68,7 @@ export interface BrandingConfig {
   whiteLogo: string;
   blackLogo: string;
   nasharzIcon: string;
-  alaskaLogo: string;
+  clientLogo: string;
   sealStamp: string;
   robotWide: string;
   robotLong: string;

@@ -42,7 +42,7 @@ export const MediaHubModal: React.FC<MediaHubModalProps> = ({
   mediaAssets,
   assets,
   branding,
-  clientName = 'Alaska Batteries Team',
+  clientName = 'Worldwide Cables Team',
   onClose,
 }) => {
   const items = assets || mediaAssets || [];
@@ -234,7 +234,7 @@ export const MediaHubModal: React.FC<MediaHubModalProps> = ({
                   Media & Deliverables Vault
                 </h2>
                 <p className="text-[10px] text-zinc-400">
-                  Alaska Batteries Campaign Preview
+                  Worldwide Cables Campaign Preview
                 </p>
               </div>
             </div>
@@ -586,7 +586,7 @@ export const MediaHubModal: React.FC<MediaHubModalProps> = ({
         <div className="px-6 py-3.5 border-t border-zinc-800/80 bg-zinc-950 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-zinc-400">
           <div className="flex items-center gap-2">
             <span className="w-2 h-2 rounded-full bg-emerald-500"></span>
-            <span>Nasharz Films Digital Asset Suite • Prepared for Alaska Batteries</span>
+            <span>Nasharz Films Digital Asset Suite • Prepared for Worldwide Cables</span>
           </div>
 
           <div className="flex items-center gap-3 w-full sm:w-auto justify-between sm:justify-end">

@@ -4,7 +4,6 @@ import { generateChapterPDF } from '../utils/pdfGenerator';
 import { FullChapterModal } from './FullChapterModal';
 import { EstimateModal } from './EstimateModal';
 import { MediaHubModal } from './MediaHubModal';
-import { UpdatesModal } from './UpdatesModal';
 import { BrandLogo } from './BrandLogo';
 import {
   Download,
@@ -48,7 +47,6 @@ export const DeckPage: React.FC<DeckPageProps> = ({
   const [showFullModal, setShowFullModal] = useState(false);
   const [showEstimateModal, setShowEstimateModal] = useState(false);
   const [showMediaHub, setShowMediaHub] = useState(false);
-  const [showUpdatesModal, setShowUpdatesModal] = useState(false);
   const [isGenerating, setIsGenerating] = useState(false);
 
   const currentChapter = data.chapters.find((c) => c.id === activeChapterId) || data.chapters[0];
@@ -59,14 +57,6 @@ export const DeckPage: React.FC<DeckPageProps> = ({
     setIsGenerating(true);
     await generateChapterPDF(currentChapter, data.branding, userName);
     setIsGenerating(false);
-  };
-
-  const handleNavigateChapter = (chapterId: string, conceptTab?: string) => {
-    setActiveChapterId(chapterId);
-    if (conceptTab) {
-      setSelectedConceptTab(conceptTab);
-    }
-    setShowFullModal(true);
   };
 
   return (
@@ -83,26 +73,12 @@ export const DeckPage: React.FC<DeckPageProps> = ({
           />
           <span className="h-3.5 w-px bg-zinc-300"></span>
           <span className="text-xs font-semibold text-zinc-800 tracking-tight font-sans">
-            Nasharz Films
+            Nasharz Labs
           </span>
         </div>
 
         {/* Right Header Navigation Items */}
         <div className="flex items-center gap-2 sm:gap-3">
-          
-          {/* Highlighted Updates Button */}
-          <button
-            onClick={() => setShowUpdatesModal(true)}
-            className="flex items-center gap-1.5 px-3 sm:px-3.5 py-1.5 rounded-full bg-amber-500/15 hover:bg-amber-500/25 text-amber-950 border border-amber-500/40 text-xs font-bold transition-all active:scale-95 cursor-pointer shadow-2xs"
-            title="View Campaign Updates, Wardrobe, Vehicles & Locations"
-          >
-            <span className="w-2 h-2 rounded-full bg-amber-600 animate-ping" />
-            <span className="hidden xs:inline">What's New</span>
-            <span className="bg-amber-500 text-black text-[9px] font-black px-1.5 py-0.2 rounded-full uppercase">
-              NEW
-            </span>
-          </button>
-
           {/* Direct Generate Estimate Button */}
           <button
             onClick={() => setShowEstimateModal(true)}
@@ -145,36 +121,47 @@ export const DeckPage: React.FC<DeckPageProps> = ({
               onClick={() => setIsDropdownOpen(!isDropdownOpen)}
               className="flex items-center gap-2 bg-transparent hover:bg-zinc-200/50 px-2.5 py-1.5 rounded-full transition-all cursor-pointer"
             >
-              <span className="text-xs font-normal text-zinc-700">{userName}</span>
-              <div className="w-6 h-6 rounded-full bg-[#d5d2cb] text-zinc-700 flex items-center justify-center text-xs font-medium">
-                {userName.charAt(0) || 'a'}
-              </div>
+              <span className="text-xs font-semibold text-zinc-800">
+                {userRole === 'client' ? 'WWC' : userName}
+              </span>
+              {userRole === 'client' ? (
+                <div className="w-6 h-6 rounded-full bg-white border border-zinc-200 flex items-center justify-center p-0.5 shadow-2xs overflow-hidden">
+                  <img
+                    src="/assets/aistudio/globe_orange_eef81ffd.png"
+                    alt="WWC"
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+              ) : (
+                <div className="w-6 h-6 rounded-full bg-[#d5d2cb] text-zinc-700 flex items-center justify-center text-xs font-medium">
+                  {userName.charAt(0) || 'a'}
+                </div>
+              )}
               <ChevronDown className="w-3.5 h-3.5 text-zinc-500" />
             </button>
 
             {isDropdownOpen && (
               <div className="absolute right-0 mt-2 w-60 bg-white rounded-2xl shadow-xl border border-zinc-200/80 py-2 z-50 animate-fadeIn">
-                <div className="px-4 py-2 border-b border-zinc-100">
-                  <p className="text-[10px] text-zinc-400 font-bold uppercase">Logged in as</p>
-                  <p className="text-xs font-bold text-zinc-900 truncate">{userName}</p>
-                  <span className="inline-block mt-0.5 text-[9px] font-bold text-[#c69a53] uppercase bg-[#c69a53]/10 px-1.5 py-0.5 rounded">
-                    {userRole === 'admin' ? 'Executive Producer' : 'Client Reviewer'}
-                  </span>
-                </div>
-
-                <button
-                  onClick={() => {
-                    setIsDropdownOpen(false);
-                    setShowUpdatesModal(true);
-                  }}
-                  className="w-full text-left px-4 py-2.5 text-xs text-amber-900 hover:bg-amber-50 font-bold flex items-center justify-between transition-all cursor-pointer border-b border-zinc-100 bg-amber-500/5"
-                >
-                  <div className="flex items-center gap-2">
-                    <Sparkles className="w-4 h-4 text-[#b8860b]" />
-                    <span>What's New (Updates)</span>
+                <div className="px-4 py-2 border-b border-zinc-100 flex items-center gap-2.5">
+                  {userRole === 'client' && (
+                    <div className="w-8 h-8 rounded-full bg-white border border-zinc-200 flex items-center justify-center p-1 shrink-0 shadow-2xs">
+                      <img
+                        src="/assets/aistudio/globe_orange_eef81ffd.png"
+                        alt="WWC"
+                        className="w-full h-full object-contain"
+                      />
+                    </div>
+                  )}
+                  <div className="min-w-0">
+                    <p className="text-[10px] text-zinc-400 font-bold uppercase">Logged in as</p>
+                    <p className="text-xs font-bold text-zinc-900 truncate">
+                      {userRole === 'client' ? 'WWC' : userName}
+                    </p>
+                    <span className="inline-block mt-0.5 text-[9px] font-bold text-[#c69a53] uppercase bg-[#c69a53]/10 px-1.5 py-0.5 rounded">
+                      {userRole === 'admin' ? 'Executive Producer' : 'WWC'}
+                    </span>
                   </div>
-                  <span className="bg-amber-500 text-black text-[9px] font-black px-1.5 py-0.2 rounded-full uppercase">NEW</span>
-                </button>
+                </div>
 
                 {/* Return to Admin Panel Option (Prominent for Admin) */}
                 {userRole === 'admin' && (
@@ -248,7 +235,7 @@ export const DeckPage: React.FC<DeckPageProps> = ({
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-end gap-2">
           <div>
             <div className="text-xs font-medium text-[#b8860b] mb-1">
-              Alaska Batteries / Launch Deck
+              Worldwide Cables / Launch Deck
             </div>
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-zinc-900 font-heading tracking-tight">
               Campaign Review
@@ -263,7 +250,7 @@ export const DeckPage: React.FC<DeckPageProps> = ({
               Prepared for
             </span>
             <span className="text-xs font-medium text-zinc-900">
-              Alaska Batteries
+              Worldwide Cables
             </span>
           </div>
         </div>
@@ -352,10 +339,10 @@ export const DeckPage: React.FC<DeckPageProps> = ({
                     <Sparkles className="w-4 h-4 text-amber-700 shrink-0 animate-pulse" />
                     <div>
                       <span className="font-extrabold text-amber-950 block">
-                        ⭐ Updated Master Concepts:
+                        ⭐ Campaign Film Concepts — Route 1:
                       </span>
                       <span className="text-amber-900 text-[11px]">
-                        "Battery Phelwan" 5-film suite with Punjabi jingles & dialogue options.
+                        "Naam Se Nahi, Kaam Se Pehchaan" ft. Javed Sheikh (3 Commercials, 25s each).
                       </span>
                     </div>
                   </div>
@@ -372,16 +359,18 @@ export const DeckPage: React.FC<DeckPageProps> = ({
                 </div>
               )}
 
-              {currentChapter.id === 'storyboards' && (
+              {(currentChapter.id === 'storyboards' || currentChapter.id === 'art-talent') && (
                 <div className="mb-4 p-3 bg-gradient-to-r from-amber-500/20 to-amber-500/10 border border-amber-500/40 rounded-2xl flex items-center justify-between gap-3 text-xs shadow-2xs">
                   <div className="flex items-center gap-2">
                     <Sparkles className="w-4 h-4 text-amber-700 shrink-0 animate-pulse" />
                     <div>
                       <span className="font-extrabold text-amber-950 block">
-                        ⭐ Updated Storyboards:
+                        {currentChapter.id === 'art-talent' ? "⭐ Client's Concept Storyboards:" : '⭐ Updated Storyboards:'}
                       </span>
                       <span className="text-amber-900 text-[11px]">
-                        Complete 5 commercial film storyboards & vector PDFs.
+                        {currentChapter.id === 'art-talent'
+                          ? "Client's Concept & Client's Concept Modified (13 slides) with high-resolution PDF export."
+                          : 'Concept 1 & Concept 2 storyboards (12 slides) with high-resolution PDF export.'}
                       </span>
                     </div>
                   </div>
@@ -507,14 +496,6 @@ export const DeckPage: React.FC<DeckPageProps> = ({
           assets={data.mediaAssets || []}
           branding={data.branding}
           onClose={() => setShowMediaHub(false)}
-        />
-      )}
-
-      {showUpdatesModal && (
-        <UpdatesModal
-          isOpen={showUpdatesModal}
-          onClose={() => setShowUpdatesModal(false)}
-          onNavigateChapter={handleNavigateChapter}
         />
       )}
 

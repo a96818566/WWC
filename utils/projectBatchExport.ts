@@ -1,13 +1,6 @@
 import JSZip from 'jszip';
 import { DeckData, Chapter, BrandingConfig } from '../types';
 import { generateChapterPDF } from './pdfGenerator';
-import {
-  generateWardrobeLookbookPDF,
-  generateVehiclesPropsPDF,
-  generateLocationsDossierPDF,
-  generateTalentAgreementPDF,
-  generateChapter07CompletePDF
-} from './artTalentPdfGenerator';
 
 export interface ExportItemConfig {
   id: string;
@@ -28,12 +21,12 @@ export const ALL_EXPORTABLE_ITEMS: ExportItemConfig[] = [
     id: 'ch01_overview',
     chapterId: 'brief',
     chapterNumber: '01',
-    title: 'Chapter 01: Campaign Overview & Strategic Brief',
+    title: 'Chapter 01: Worldwide Cables TVC Creative Brief',
     category: 'The Ask & Strategic Scope',
     folder: 'Chapter_01_Campaign_Overview',
-    filename: 'Nasharz_Alaska_Chapter01_Campaign_Overview.pdf',
-    description: 'Executive mandate, brand challenge, target audience analysis & core deliverables.',
-    pageCountEst: '4 Pages'
+    filename: 'Nasharz_WWC_Chapter01_Campaign_Overview.pdf',
+    description: 'Naam Se Nahi, Kaam Se Pehchaan ft. Javed Sheikh — assumptions, positioning, Ultravolt benchmark, segmentation, claims register & open questions.',
+    pageCountEst: '10 Pages'
   },
   {
     id: 'ch02_creative_concept',
@@ -42,31 +35,31 @@ export const ALL_EXPORTABLE_ITEMS: ExportItemConfig[] = [
     title: 'Chapter 02: Creative Concept & Campaign Narratives',
     category: 'Big Idea & Core Message',
     folder: 'Chapter_02_Creative_Concepts',
-    filename: 'Nasharz_Alaska_Chapter02_Creative_Concepts.pdf',
-    description: '"Battery Pehlwan" big idea, comedic tension matrix & emotional consumer resonance.',
+    filename: 'Nasharz_WWC_Chapter02_Creative_Concepts.pdf',
+    description: '"Hifazti Current" big idea, 3 strategic lines, 20–25s film structure, 3 Javed Sheikh films & pre-shoot checks.',
     pageCountEst: '6 Pages'
   },
   {
     id: 'ch03_scripts',
     chapterId: 'concepts',
     chapterNumber: '03',
-    title: 'Chapter 03: 5 Hero Film Master Scripts & Audio Direction',
-    category: '5 TVC Scripts & Punjabi Jingles',
+    title: 'Chapter 03: Route 1 Film Concepts (Naam Se Nahi, Kaam Se Pehchaan)',
+    category: '3 Hero TVCs ft. Javed Sheikh',
     folder: 'Chapter_03_Master_Scripts',
-    filename: 'Nasharz_Alaska_Chapter03_Master_Scripts.pdf',
-    description: 'Complete 5 commercial film scripts, Punjabi dialogue variants & sung musical routes.',
-    pageCountEst: '8 Pages'
+    filename: 'Nasharz_WWC_Chapter03_Master_Scripts.pdf',
+    description: 'Campaign Film Concepts Route 1: Nishana (Chaudhry Sb), Guru Ji (LSZH), and Chamkila (Bill-Couture) — 3 commercials, 25 sec each.',
+    pageCountEst: '9 Pages'
   },
   {
     id: 'ch04_storyboards',
     chapterId: 'storyboards',
     chapterNumber: '04',
-    title: 'Chapter 04: Shot-by-Shot Visual Storyboards',
-    category: '5 Film Visual Breakdown',
+    title: 'Chapter 04: Visual Storyboards (Concept 1 & Concept 2)',
+    category: 'Concept 1 & Concept 2 (12 Slides)',
     folder: 'Chapter_04_Storyboards',
-    filename: 'Nasharz_Alaska_Chapter04_Visual_Storyboards.pdf',
-    description: 'High-res visual storyboards, action beats, camera angles & timing for all 5 films.',
-    pageCountEst: '10 Pages'
+    filename: 'Nasharz_WWC_Chapter04_Visual_Storyboards.pdf',
+    description: 'Concept 1 (Slides 1–6) & Concept 2 (Slides 1–6) high-resolution visual storyboards with bold reverse section headings.',
+    pageCountEst: '16 Pages'
   },
   {
     id: 'ch05_treatment',
@@ -75,7 +68,7 @@ export const ALL_EXPORTABLE_ITEMS: ExportItemConfig[] = [
     title: "Chapter 05: Director's Visual Treatment & Cinematography",
     category: 'Director Vision & Aesthetic',
     folder: 'Chapter_05_Visual_Treatment',
-    filename: 'Nasharz_Alaska_Chapter05_Visual_Treatment.pdf',
+    filename: 'Nasharz_WWC_Chapter05_Visual_Treatment.pdf',
     description: 'ARRI Alexa LF camera package, anamorphic lenses, lighting cues & color grading palette.',
     pageCountEst: '6 Pages'
   },
@@ -86,75 +79,20 @@ export const ALL_EXPORTABLE_ITEMS: ExportItemConfig[] = [
     title: 'Chapter 06: Production Schedule, Crew & Technical Plan',
     category: 'Schedule & Logistics',
     folder: 'Chapter_06_Production_Plan',
-    filename: 'Nasharz_Alaska_Chapter06_Production_Plan.pdf',
+    filename: 'Nasharz_WWC_Chapter06_Production_Plan.pdf',
     description: '4-day multi-city shoot schedule, unit management, crew roster & post-production milestones.',
     pageCountEst: '5 Pages'
   },
-  // Chapter 07 Separated Standalone Modules
   {
-    id: 'ch07_wardrobe',
+    id: 'ch07_clients_concept',
     chapterId: 'art-talent',
     chapterNumber: '07',
-    section: 'wardrobe',
-    title: '01. Lead & Support Wardrobe Lookbook (Standalone PDF)',
-    category: 'Art & Talent Suite',
-    folder: 'Chapter_07_Art_and_Talent',
-    filename: '01_Nasharz_Alaska_Wardrobe_Lookbook.pdf',
-    description: '17 Character specification sheets: Iftikhar Thakur variants, Battery Expert uniform & supporting cast.',
-    pageCountEst: '12 Pages',
-    isSubItem: true
-  },
-  {
-    id: 'ch07_vehicles_props',
-    chapterId: 'art-talent',
-    chapterNumber: '07',
-    section: 'vehicles',
-    title: '02. Vehicle Fleet & Props Design Grids (Standalone PDF)',
-    category: 'Art & Talent Suite',
-    folder: 'Chapter_07_Art_and_Talent',
-    filename: '02_Nasharz_Alaska_Vehicles_and_Props_Fleet.pdf',
-    description: 'Master Mobile Lab Van Options 1, 2, 3 + Film-by-film isolated prop sheets (Car, Truck, Tractor, Bike, UPS).',
-    pageCountEst: '9 Pages',
-    isSubItem: true
-  },
-  {
-    id: 'ch07_locations',
-    chapterId: 'art-talent',
-    chapterNumber: '07',
-    section: 'locations',
-    title: '03. Location Scouting Dossiers & Permits Matrix (Standalone PDF)',
-    category: 'Art & Talent Suite',
-    folder: 'Chapter_07_Art_and_Talent',
-    filename: '03_Nasharz_Alaska_Location_Scouting_Dossiers.pdf',
-    description: '6 Scouting dossiers (Badshahi Food Street, Karachi Jetty, Lahore Farmlands, Packages Mall, Fakir Khana Haveli, Evernew Soundstage) + Logistics Matrix.',
-    pageCountEst: '8 Pages',
-    isSubItem: true
-  },
-  {
-    id: 'ch07_talent_contract',
-    chapterId: 'art-talent',
-    chapterNumber: '07',
-    section: 'talent',
-    title: '04. Celebrity Talent Agreement & Likeness Authorization (Standalone PDF)',
-    category: 'Art & Talent Suite',
-    folder: 'Chapter_07_Art_and_Talent',
-    filename: '04_Nasharz_Alaska_Talent_Agreement_and_Casting.pdf',
-    description: 'Iftikhar Thakur 2-year exclusive ambassador contract, rights, exclusivity clauses & official sealed signatory.',
-    pageCountEst: '4 Pages',
-    isSubItem: true
-  },
-  {
-    id: 'ch07_complete_master',
-    chapterId: 'art-talent',
-    chapterNumber: '07',
-    section: 'complete_art',
-    title: '05. Complete Chapter 07 Master Lookbook (Combined All-in-One)',
-    category: 'Art & Talent Suite',
-    folder: 'Chapter_07_Art_and_Talent',
-    filename: '05_Nasharz_Alaska_Chapter07_Master_Lookbook_Complete.pdf',
-    description: 'Full omnibus production design suite containing Wardrobe, Vehicles, Props, Locations, and Talent Contract in a single master book.',
-    pageCountEst: '30+ Pages',
-    isSubItem: true
+    title: "Chapter 07: Client's Concept Storyboards (Original & Modified)",
+    category: "Client's Concept (13 Slides)",
+    folder: 'Chapter_07_Clients_Concept',
+    filename: 'Nasharz_WWC_Chapter07_Clients_Concept_Storyboards.pdf',
+    description: "Client's Concept (Slides 1–6) & Client's Concept Modified (Slides 1–7) high-resolution storyboards with bold reverse section headings.",
+    pageCountEst: '17 Pages'
   }
 ];
 
@@ -222,25 +160,8 @@ export async function executeBatchExport(
 
       let resultBlob: Blob | null = null;
 
-      if (item.section === 'wardrobe') {
-        const res = await generateWardrobeLookbookPDF(chapter, data.branding, clientName, { returnBlob: true });
-        if (res && 'blob' in res && res.blob) resultBlob = res.blob;
-      } else if (item.section === 'vehicles') {
-        const res = await generateVehiclesPropsPDF(chapter, data.branding, clientName, { returnBlob: true });
-        if (res && 'blob' in res && res.blob) resultBlob = res.blob;
-      } else if (item.section === 'locations') {
-        const res = await generateLocationsDossierPDF(chapter, data.branding, clientName, { returnBlob: true });
-        if (res && 'blob' in res && res.blob) resultBlob = res.blob;
-      } else if (item.section === 'talent') {
-        const res = await generateTalentAgreementPDF(chapter, data.branding, clientName, { returnBlob: true });
-        if (res && 'blob' in res && res.blob) resultBlob = res.blob;
-      } else if (item.section === 'complete_art') {
-        const res = await generateChapter07CompletePDF(chapter, data.branding, clientName, { returnBlob: true });
-        if (res && 'blob' in res && res.blob) resultBlob = res.blob;
-      } else {
-        const res = await generateChapterPDF(chapter, data.branding, clientName, { returnBlob: true });
-        if (res && 'blob' in res && res.blob) resultBlob = res.blob;
-      }
+      const res = await generateChapterPDF(chapter, data.branding, clientName, { returnBlob: true });
+      if (res && 'blob' in res && res.blob) resultBlob = res.blob;
 
       if (resultBlob) {
         if (mode === 'zip' && zip) {
@@ -278,7 +199,7 @@ export async function executeBatchExport(
       );
 
       const timestamp = new Date().toISOString().slice(0, 10);
-      downloadBlob(zipBlob, `Nasharz_Alaska_Batteries_Production_Package_${timestamp}.zip`);
+      downloadBlob(zipBlob, `Nasharz_Worldwide_Cables_Production_Package_${timestamp}.zip`);
     }
 
     if (onProgress) {

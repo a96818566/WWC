@@ -51,7 +51,7 @@ export const EstimateModal: React.FC<EstimateModalProps> = ({
 
   // Client Details
   const [clientAddress, setClientAddress] = useState<string>(
-    'Alaska Battery. 7th Floor, B-3 Tower, Jinnah Avenue, New Blue Area, Islamabad'
+    'Worldwide Cables. 92 BWA, Broadway Commercial Phase 8, DHA Lahore, Punjab - Pakistan. | +92 334 666 0452 | info@worldwidecables.com.pk | www.worldwidecables.com.pk'
   );
   const [clientNTN, setClientNTN] = useState<string>('');
 
@@ -228,7 +228,7 @@ export const EstimateModal: React.FC<EstimateModalProps> = ({
                 </span>
               </div>
               <h2 className="text-sm sm:text-base font-semibold text-zinc-900 tracking-tight">
-                Alaska Battery Campaign
+                Worldwide Cables Campaign
               </h2>
             </div>
           </div>
@@ -976,7 +976,7 @@ export const EstimateModal: React.FC<EstimateModalProps> = ({
         {/* MODAL FOOTER */}
         <div className="px-6 sm:px-8 py-3 bg-[#fafafa] border-t border-zinc-200/80 flex items-center justify-between text-xs text-zinc-500">
           <span>
-            Prepared for: <strong className="text-zinc-800 font-medium">Alaska Battery</strong>
+            Prepared for: <strong className="text-zinc-800 font-medium">Worldwide Cables</strong>
           </span>
           <span className="text-[11px] text-zinc-400">
             Nasharz Films Creative Production

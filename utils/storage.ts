@@ -1,7 +1,7 @@
 import { DeckData, LoginLog } from '../types';
 import { initialDeckData } from '../data/defaultData';
 
-const STORAGE_KEY = 'nasharz_alaska_deck_data_v66';
+const STORAGE_KEY = 'nasharz_wwc_deck_data_v15';
 
 export function getStoredData(): DeckData {
   try {
@@ -29,20 +29,35 @@ export function getStoredData(): DeckData {
         return {
           ...defaultCh,
           ...ch,
-          pdfFullText: defaultCh.pdfFullText || ch.pdfFullText,
+          pdfFullText: defaultCh.pdfFullText,
           conceptTabs: ch.conceptTabs !== undefined ? ch.conceptTabs : defaultCh.conceptTabs,
           finalConceptsText: ch.finalConceptsText !== undefined ? ch.finalConceptsText : defaultCh.finalConceptsText,
           folders: defaultCh.folders ? defaultCh.folders : ch.folders,
           attachedFiles: defaultCh.attachedFiles ? defaultCh.attachedFiles : ch.attachedFiles,
-          galleryImages: ch.galleryImages !== undefined ? ch.galleryImages : defaultCh.galleryImages,
+          galleryImages: ch.id === 'storyboards' ? defaultCh.galleryImages : (ch.galleryImages !== undefined ? ch.galleryImages : defaultCh.galleryImages),
           lastUpdated: ch.lastUpdated !== undefined ? ch.lastUpdated : defaultCh.lastUpdated,
         };
       }
       return ch;
     });
 
+    const mergedBranding = { ...initialDeckData.branding, ...(parsed.branding || {}) };
+    if (
+      !parsed.branding?.clientAccessCode ||
+      parsed.branding.clientAccessCode === 'alaska$bat' ||
+      parsed.branding.clientAccessCode === 'wwc.com.pk'
+    ) {
+      mergedBranding.clientAccessCode = initialDeckData.branding.clientAccessCode;
+    }
+    if (!parsed.branding?.adminPassword || parsed.branding.adminPassword === '566288') {
+      mergedBranding.adminPassword = initialDeckData.branding.adminPassword;
+    }
+    if (mergedBranding.clientLogo && mergedBranding.clientLogo.includes('Alaska_Logo')) {
+      mergedBranding.clientLogo = '';
+    }
+
     return {
-      branding: { ...initialDeckData.branding, ...(parsed.branding || {}) },
+      branding: mergedBranding,
       chapters: hydratedChapters,
       estimates: parsed.estimates && parsed.estimates.length > 0 ? parsed.estimates : initialDeckData.estimates,
       logs: parsed.logs || initialDeckData.logs,

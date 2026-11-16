@@ -40,7 +40,7 @@ export function createSvgPlaceholder(title: string): CachedImageData {
     <circle cx="640" cy="300" r="54" fill="#fefce8" stroke="#fef08a" stroke-width="2"/>
     <path d="M640 270 L652 294 L678 298 L659 316 L663 342 L640 330 L617 342 L621 316 L602 298 L628 294 Z" fill="url(#gold)"/>
     <text x="640" y="400" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="28" font-weight="800" fill="#0f172a" text-anchor="middle">${cleanTitle}</text>
-    <text x="640" y="440" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="600" fill="#64748b" text-anchor="middle" letter-spacing="1">NASHARZ FILMS • ALASKA BATTERIES PRODUCTION ASSET</text>
+    <text x="640" y="440" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="600" fill="#64748b" text-anchor="middle" letter-spacing="1">NASHARZ FILMS • WORLDWIDE CABLES PRODUCTION ASSET</text>
   </svg>`;
   const dataUrl = `data:image/svg+xml;base64,${btoa(unescape(encodeURIComponent(svg)))}`;
   return { dataUrl, width: 1280, height: 720, aspect: 16 / 9 };

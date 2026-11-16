@@ -14,7 +14,7 @@ export const LoginPage: React.FC<LoginPageProps> = ({
   onClientLogin,
   onAdminLogin,
 }) => {
-  const [name, setName] = useState('aati');
+  const [name, setName] = useState('');
   const [accessCode, setAccessCode] = useState('');
   const [errorMsg, setErrorMsg] = useState('');
 
@@ -22,26 +22,20 @@ export const LoginPage: React.FC<LoginPageProps> = ({
     e.preventDefault();
     setErrorMsg('');
 
-    const trimmedName = name.trim() || 'Valued Client';
+    const trimmedName = name.trim();
     const code = accessCode.trim();
 
-    // Check Admin Login credentials: aati / 566288
-    if (trimmedName.toLowerCase() === 'aati' && code === branding.adminPassword) {
+    // Check Admin Login credentials: wwcadmin / branding.adminPassword (default: wwcmaz)
+    if (trimmedName.toLowerCase() === 'wwcadmin' && code === branding.adminPassword) {
       onAdminLogin();
       return;
     }
 
-    // Check Client Login credentials: alaska$bat, login alaska, Alaska$Bat
-    const validClientCodes = [
-      branding.clientAccessCode.toLowerCase(),
-      'login alaska',
-      'alaska$bat',
-    ];
-
-    if (validClientCodes.includes(code.toLowerCase())) {
+    // Check Client Login credentials: wwcclient / branding.clientAccessCode (default: nasharzfilms.com)
+    if (trimmedName.toLowerCase() === 'wwcclient' && code === branding.clientAccessCode) {
       onClientLogin(trimmedName);
     } else {
-      setErrorMsg('Invalid access code. Please use "alaska$bat" for client or "566288" for admin.');
+      setErrorMsg('Invalid login ID or password. Please check your credentials and try again.');
     }
   };
 
@@ -52,7 +46,7 @@ export const LoginPage: React.FC<LoginPageProps> = ({
       <div className="absolute inset-0 w-full h-full z-0">
         <img
           src={branding.robotWide}
-          alt="Alaska Batteries Visual"
+          alt="Worldwide Cables Visual"
           className="w-full h-full object-cover object-center"
         />
         {/* Soft Vignette & Dark Overlay for optimal image visibility and high contrast text */}
@@ -64,7 +58,7 @@ export const LoginPage: React.FC<LoginPageProps> = ({
       <div className="relative z-10 w-full lg:w-1/2 mb-6 lg:mb-0 max-w-xl self-end">
         <div className="space-y-2">
           <span className="text-xs sm:text-sm font-semibold uppercase tracking-widest text-[#c69a53] block">
-            Alaska Batteries
+            Worldwide Cables
           </span>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-none font-heading">
             Launch Deck
@@ -84,7 +78,7 @@ export const LoginPage: React.FC<LoginPageProps> = ({
             <BrandLogo src={branding.whiteLogo || branding.blackLogo} alt="Nasharz Icon" className="h-6 w-auto object-contain" fallbackColor="#ffffff" />
             <span className="h-3.5 w-px bg-white/20"></span>
             <span className="text-xs font-semibold text-white/90 tracking-tight font-sans">
-              Nasharz Films
+              Nasharz Labs
             </span>
           </div>
 
@@ -99,7 +93,7 @@ export const LoginPage: React.FC<LoginPageProps> = ({
             </span>
 
             <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight leading-[1.1] mb-2 font-heading">
-              Alaska<br />Batteries.
+              Worldwide<br />Cables.
             </h2>
 
             <p className="text-xs sm:text-sm text-white/70 font-normal leading-relaxed">
@@ -111,21 +105,21 @@ export const LoginPage: React.FC<LoginPageProps> = ({
           <form onSubmit={handleSubmit} className="space-y-4">
             <div>
               <label className="text-xs text-white/70 font-medium block mb-1.5">
-                Name
+                Login ID
               </label>
               <input
                 type="text"
                 required
                 value={name}
                 onChange={(e) => setName(e.target.value)}
-                placeholder="Enter your name"
+                placeholder="Enter your login ID"
                 className="w-full bg-white/10 border border-white/15 rounded-xl px-4 py-3 text-sm text-white placeholder-white/40 focus:outline-none focus:ring-2 focus:ring-[#c69a53]/60 focus:border-[#c69a53] transition-all font-medium"
               />
             </div>
 
             <div>
               <label className="text-xs text-white/70 font-medium block mb-1.5">
-                Access code
+                Password
               </label>
               <input
                 type="password"

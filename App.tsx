@@ -20,8 +20,8 @@ export default function App() {
     return () => window.removeEventListener('storage', handleStorageChange);
   }, []);
 
-  const handleClientLogin = (name: string) => {
-    const clientName = name || 'Alaska Batteries Client';
+  const handleClientLogin = (_name: string) => {
+    const clientName = 'WWC';
     setUserName(clientName);
     setUserRole('client');
     logUserAccess(clientName, 'client');
@@ -31,7 +31,7 @@ export default function App() {
   };
 
   const handleAdminLogin = () => {
-    const adminName = 'aati';
+    const adminName = 'wwcadmin';
     setUserName(adminName);
     setUserRole('admin');
     logUserAccess(adminName, 'admin');

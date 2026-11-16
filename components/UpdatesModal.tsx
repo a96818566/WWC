@@ -51,7 +51,7 @@ export const UpdatesModal: React.FC<UpdatesModalProps> = ({
     },
     {
       seq: 'Main Unit',
-      title: 'Alaska Rapid Response Medical/Tech Team',
+      title: 'WWC Rapid Response Medical/Tech Team',
       actor: 'Supporting Cast',
       desc: 'Uniformed laboratory specialists in clean white lab coats with tech badges, supporting Battery Pehlwan during the diagnostic intervention.',
       img: 'https://res.cloudinary.com/dawlj9ne4/image/upload/Battery_Pehlwan_Medical_Team_Sheet_v07k88.png',
@@ -359,7 +359,7 @@ export const UpdatesModal: React.FC<UpdatesModalProps> = ({
                   <div>
                     <div className="flex items-center justify-between mb-2">
                       <span className="text-[10px] font-extrabold text-[#b8860b] uppercase tracking-wider flex items-center gap-1.5">
-                        <Shirt className="w-3.5 h-3.5" /> Chapter 07 • Art & Talent
+                        <Shirt className="w-3.5 h-3.5" /> Chapter 07 • Client's Concept
                       </span>
                       <span className="bg-amber-100 text-amber-900 text-[10px] font-bold px-2 py-0.5 rounded-full">
                         17 Look Sheets
@@ -397,7 +397,7 @@ export const UpdatesModal: React.FC<UpdatesModalProps> = ({
                   <div>
                     <div className="flex items-center justify-between mb-2">
                       <span className="text-[10px] font-extrabold text-[#b8860b] uppercase tracking-wider flex items-center gap-1.5">
-                        <Truck className="w-3.5 h-3.5" /> Chapter 07 • Art & Talent
+                        <Truck className="w-3.5 h-3.5" /> Chapter 07 • Client's Concept
                       </span>
                       <span className="bg-amber-100 text-amber-900 text-[10px] font-bold px-2 py-0.5 rounded-full">
                         6 Production Grids
@@ -435,7 +435,7 @@ export const UpdatesModal: React.FC<UpdatesModalProps> = ({
                   <div>
                     <div className="flex items-center justify-between mb-2">
                       <span className="text-[10px] font-extrabold text-[#b8860b] uppercase tracking-wider flex items-center gap-1.5">
-                        <MapPin className="w-3.5 h-3.5" /> Chapter 07 • Art & Talent
+                        <MapPin className="w-3.5 h-3.5" /> Chapter 07 • Client's Concept
                       </span>
                       <span className="bg-amber-100 text-amber-900 text-[10px] font-bold px-2 py-0.5 rounded-full">
                         6 Scouted Locations
@@ -856,7 +856,7 @@ export const UpdatesModal: React.FC<UpdatesModalProps> = ({
                     <FileText className="w-4 h-4 text-amber-700" />
                   </div>
                   <h4 className="font-extrabold text-zinc-900 text-xs mb-1">Official Signatories</h4>
-                  <p className="text-xs text-zinc-600">Executed between Alaska Batteries (Client), Nasharz Films (Production House), and Mr. Iftikhar Ahmad Sheikh (Talent).</p>
+                  <p className="text-xs text-zinc-600">Executed between Worldwide Cables (Client), Nasharz Films (Production House), and Mr. Iftikhar Ahmad Sheikh (Talent).</p>
                 </div>
               </div>
             </div>
@@ -948,7 +948,7 @@ export const UpdatesModal: React.FC<UpdatesModalProps> = ({
                       <span className="text-[10px] font-bold bg-zinc-100 text-zinc-700 px-2 py-0.5 rounded">Home Backup</span>
                     </div>
                     <p className="text-xs text-zinc-600 mt-1">
-                      Power failure disrupts wedding grooming inside historic Haveli; restored seamlessly by Alaska deep cycle inverter power.
+                      Power failure disrupts wedding grooming inside historic Haveli; restored seamlessly by WWC deep cycle inverter power.
                     </p>
                   </div>
                 </div>
@@ -959,7 +959,7 @@ export const UpdatesModal: React.FC<UpdatesModalProps> = ({
                     <Music className="w-5 h-5 text-amber-800" />
                     <div>
                       <h5 className="font-extrabold text-amber-950 text-xs">3 Punjabi Jingle Audio Routes</h5>
-                      <p className="text-[11px] text-amber-900">Option A ("Pehlwan Alaska"), Option B ("Damdaar Current"), Option C ("Har Lamha Aitemaad").</p>
+                      <p className="text-[11px] text-amber-900">Option A ("Pehlwan WWC"), Option B ("Damdaar Current"), Option C ("Har Lamha Aitemaad").</p>
                     </div>
                   </div>
                 </div>
@@ -976,7 +976,7 @@ export const UpdatesModal: React.FC<UpdatesModalProps> = ({
                     <ImageIcon className="w-5 h-5 text-[#b8860b]" /> Visual Commercial Storyboards (Chapter 06)
                   </h3>
                   <p className="text-xs text-zinc-500">
-                    25 High-Definition visual storyboard sheets mapping camera progression, pacing, and vector PDFs.
+                    12 High-Resolution storyboard slides across Concept 1 and Concept 2 with vector PDF export.
                   </p>
                 </div>
                 <button
@@ -992,22 +992,22 @@ export const UpdatesModal: React.FC<UpdatesModalProps> = ({
               </div>
 
               {/* Storyboard Collections */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {[
-                  { name: 'Main TVC Master Board', count: '5 Sheets', img: 'https://lh3.googleusercontent.com/d/1V34IZzvcW8e1Hi1P891n4N0DXmqh8698' },
-                  { name: 'Car Battery Film', count: '5 Sheets', img: 'https://lh3.googleusercontent.com/d/1Hv7Vu1IgLujmqJCuXoROTZQI8T81H6Fe' },
-                  { name: 'Truck Logistics Film', count: '5 Sheets', img: 'https://lh3.googleusercontent.com/d/1vg9_oO5mgFVtfYBnhurA49x3UXss0PW4' },
-                  { name: 'Agri Tractor Film', count: '5 Sheets', img: 'https://lh3.googleusercontent.com/d/1NTtmKqHWwF6ZCNw_9LuLxjRLFVkDt0uJ' },
-                  { name: 'UPS Wedding Film', count: '5 Sheets', img: 'https://lh3.googleusercontent.com/d/1Q3j1LeNDLNw4X7OplZON3tXbmag2eTSG' },
-                  { name: 'Master Storyboard (MSB)', count: '6 Sheets', img: 'https://lh3.googleusercontent.com/d/1lxlow_AiObvWLeMoGlrRizLxwfYO9Duk' }
+                  { name: 'Concept 1', count: '6 Slides', img: 'https://res.cloudinary.com/zpwicpo5/image/upload/Worldwide_Cables__F1.png' },
+                  { name: 'Concept 2', count: '6 Slides', img: 'https://res.cloudinary.com/zpwicpo5/image/upload/Worldwide_Cables__N1.png' }
                 ].map((board, idx) => (
                   <div key={idx} className="bg-white rounded-2xl border border-zinc-200 overflow-hidden shadow-xs">
+                    <div className="bg-black text-white px-4 py-2 border-l-4 border-[#c69a53] flex items-center justify-between">
+                      <span className="font-black text-xs uppercase tracking-widest">{board.name}</span>
+                      <span className="text-[10px] font-bold text-[#c69a53] uppercase tracking-wider">{board.count}</span>
+                    </div>
                     <div className="aspect-[16/9] bg-zinc-900 overflow-hidden">
                       <img src={board.img} alt={board.name} className="w-full h-full object-cover" loading="lazy" />
                     </div>
                     <div className="p-3 flex items-center justify-between">
                       <div>
-                        <h4 className="font-extrabold text-zinc-900 text-xs">{board.name}</h4>
+                        <h4 className="font-extrabold text-zinc-900 text-xs">{board.name} — Route 1 Storyboard</h4>
                         <span className="text-[10px] text-zinc-500">{board.count}</span>
                       </div>
                       <button
