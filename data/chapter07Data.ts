@@ -5,7 +5,7 @@ export const chapter07Data: Chapter = {
   number: '07',
   title: "Client's Concept",
   category: 'Visual Framing',
-  visualImage: 'https://res.cloudinary.com/zpwicpo5/image/upload/Confident_Cable_Store_Ambassador_1.png',
+  visualImage: 'https://res.cloudinary.com/zpwicpo5/image/upload/Premium_Pinstripes_at_Worldwide_Cables.png',
   visualImagePosition: 'center center',
   overlayHeadline: "Client's Concept Storyboards.",
   summary: "Client's Concept & Client's Concept Modified storyboards (13 high-resolution frames)",

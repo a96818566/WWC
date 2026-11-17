@@ -1,7 +1,7 @@
 import { DeckData, LoginLog } from '../types';
 import { initialDeckData } from '../data/defaultData';
 
-const STORAGE_KEY = 'nasharz_wwc_deck_data_v20';
+const STORAGE_KEY = 'nasharz_wwc_deck_data_v22';
 
 export function getStoredData(): DeckData {
   try {
@@ -55,10 +55,10 @@ export function getStoredData(): DeckData {
     if (mergedBranding.clientLogo && mergedBranding.clientLogo.includes('Alaska_Logo')) {
       mergedBranding.clientLogo = '';
     }
-    if (!mergedBranding.robotWide || mergedBranding.robotWide.includes('wwc_hp.png')) {
+    if (!mergedBranding.robotWide || mergedBranding.robotWide.includes('wwc_hp.png') || mergedBranding.robotWide.includes('Thumbs-Up_Advertisement.png')) {
       mergedBranding.robotWide = initialDeckData.branding.robotWide;
     }
-    if (!mergedBranding.robotLong || mergedBranding.robotLong.includes('wwc_hp.png')) {
+    if (!mergedBranding.robotLong || mergedBranding.robotLong.includes('wwc_hp.png') || mergedBranding.robotLong.includes('Thumbs-Up_Advertisement.png')) {
       mergedBranding.robotLong = initialDeckData.branding.robotLong;
     }
 
