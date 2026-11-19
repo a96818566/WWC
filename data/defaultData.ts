@@ -106,7 +106,6 @@ What the coverage shows:
 • Ultravolt is itself a new brand. It was launched in September 2026 by the Aditya Birla Group, housed under UltraTech Cement, with a Rs 1,800 crore investment, a new plant in Gujarat and Shah Rukh Khan as ambassador.
 • It does not rely on a cable legacy. It borrows parent credibility, a celebrity, a one-line emotional promise ("Power, ek zimmedari") and hard proof (TruePure copper, 99.97% purity, sourced from the group's own Hindalco).
 • It pairs the campaign with trade visibility (6,000+ touchpoints) and an electrician training programme.
-• The campaign was created by Ogilvy, with brand identity by Interbrand.
 What this means for WWC:
 • Parent-group legacy → WWC equivalent: No parent legacy. Replace with institutional proof: DHA Lahore and DHA Burki approvals, PEC certificate, MES, UET and C&W clients, TÜV Austria partnership
 • Celebrity ambassador → WWC equivalent: Javed Sheikh

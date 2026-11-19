@@ -704,7 +704,6 @@ export const FullChapterModal: React.FC<FullChapterModalProps> = ({
                       <li>Ultravolt is itself a new brand. It was launched in September 2026 by the Aditya Birla Group, housed under UltraTech Cement, with a Rs 1,800 crore investment, a new plant in Gujarat and Shah Rukh Khan as ambassador.</li>
                       <li>It does not rely on a cable legacy. It borrows parent credibility, a celebrity, a one-line emotional promise ("Power, ek zimmedari") and hard proof (TruePure copper, 99.97% purity, sourced from the group's own Hindalco).</li>
                       <li>It pairs the campaign with trade visibility (6,000+ touchpoints) and an electrician training programme.</li>
-                      <li>The campaign was created by Ogilvy, with brand identity by Interbrand.</li>
                     </ul>
                   </div>
                   <div className="overflow-x-auto rounded-xl border border-zinc-200 shadow-xs">
